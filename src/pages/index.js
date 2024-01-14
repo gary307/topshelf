@@ -1,29 +1,27 @@
 import * as React from "react";
-import premium_1 from "../videos/premium_1.mp4";
 import { styled, createGlobalStyle } from "styled-components";
+import { PremiumVideo } from "../components/premiumVideo";
 
 const GlobalTemplateStyle = createGlobalStyle`
 
 body {
-  font-family: 'Avenir', arial, sans-serif;
-  background: black;
+  font-family: 'Quicksand', arial, sans-serif;
+  background: #262121;
   color: white;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-`;
 
-const VideoContainer = styled.div`
-  border-radius: 50%;
-  overflow: hidden;
-  width: 590px;
-  height: 180px;
-  border-radius: 500px;
-  position: relative;
-`;
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Playfair Display', arial, sans-serif;
+  color: orange;
+}
 
-const StyledVideo = styled.video`
-  margin-top: -147px;
-  margin-left: -30px;
-  position: absolute;
+
+p {
+  font-family: 'Quicksand', arial, sans-serif;
+}
 `;
 
 const Wrapper = styled.div`
@@ -49,66 +47,135 @@ const ModuleContainer = styled.div`
     flex-direction: column;
   }
 `;
+
+const HeroContainer = styled.div`
+  display: flex;
+  gap: 50px;
+  padding: 0 0 100px 0;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
+  background: #555555;
+`;
+
 const ModuleColumn = styled.div`
   width: 50%;
   box-sizing: border-box;
+
+  ${(props) => `
+    text-align: ${props.align || "left"};
+    justify-content: ${props.align || "left"};
+  `}
 `;
 
-const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial/getting-started/",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-    color: "#E95800",
-  },
-  {
-    text: "How to Guides",
-    url: "https://www.gatsbyjs.com/docs/how-to/",
-    description:
-      "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
-    color: "#1099A8",
-  },
-  {
-    text: "Reference Guides",
-    url: "https://www.gatsbyjs.com/docs/reference/",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-    color: "#BC027F",
-  },
-  {
-    text: "Conceptual Guides",
-    url: "https://www.gatsbyjs.com/docs/conceptual/",
-    description:
-      "Big-picture explanations of higher-level Gatsby concepts. Most useful for building understanding of a particular topic.",
-    color: "#0D96F2",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-    color: "#8EB814",
-  },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    badge: true,
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-    color: "#663399",
-  },
-];
+const HeroColumn = styled.div`
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+`;
+
+const Header = styled.div`
+  width: 100%;
+  border-bottom: 1px solid white;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+`;
+
+const HeroTitle = styled.h1`
+  font-size: 40px;
+  margin-bottom: 40px;
+`;
+
+const HeaderContent = styled.div`
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+  padding: 0 20px;
+`;
+
+const StyledNav = styled.nav`
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  width: 100%;
+  font-family: "Playfair Display", arial, sans-serif;
+  font-size: 17px;
+  letter-spacing: 2px;
+`;
+
+const LogoBottom = styled.div`
+  height: 200px;
+  opacity: 0.5;
+  width: 350px;
+  background: green;
+  margin: 0 auto 50px;
+`;
+
+const HeroVideoWrapper = styled.div`
+  video {
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+  }
+`;
 
 const IndexPage = () => {
   return (
     <>
       <GlobalTemplateStyle />
+      <Header>
+        <StyledNav>
+          <HeaderContent>
+            <StyledNav>
+              <a>Home</a>
+              <a>People</a>
+              <a>Our work</a>
+              <a>Contact</a>
+            </StyledNav>
+          </HeaderContent>
+        </StyledNav>
+      </Header>
+
+      <HeroVideoWrapper>
+        <video
+          autoPlay
+          loop
+          muted
+          src="https://www.w3schools.com/html/mov_bbb.mp4"
+        />
+      </HeroVideoWrapper>
+
+      <HeroContainer>
+        <HeroColumn>
+          <LogoBottom />
+
+          <HeroTitle>TOP SHELF IS...</HeroTitle>
+
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              et sapien vulputate, convallis justo fringilla, vulputate est.
+              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+              posuere cubilia curae; In libero elit, fermentum ac turpis in,
+              convallis feugiat tortor. Cras in massa metus. Morbi pretium justo
+              quis felis luctus posuere. Sed nec nibh vitae augue gravida
+              tincidunt fringilla quis mi. Ut ultrices maximus diam, lobortis
+              fermentum erat ultrices eget.
+            </p>
+          </div>
+        </HeroColumn>
+      </HeroContainer>
       <Wrapper>
         <ModuleContainer>
           <ModuleColumn>
             <h2>Title</h2>
-
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
               venenatis odio et vestibulum tempus. Fusce orci eros, finibus at
@@ -120,38 +187,13 @@ const IndexPage = () => {
           </ModuleColumn>
 
           <ModuleColumn>
-            <VideoContainer>
-              <StyledVideo
-                width="640"
-                height="480"
-                controls={false}
-                src={premium_1}
-                loop
-                autoPlay
-                muted
-              />
-            </VideoContainer>
+            <PremiumVideo />
           </ModuleColumn>
         </ModuleContainer>
 
         <ModuleContainer>
           <ModuleColumn>
-            <VideoContainer>
-              <StyledVideo
-                width="640"
-                height="480"
-                controls={false}
-                src={premium_1}
-                loop
-                autoPlay
-                muted
-              />
-            </VideoContainer>
-          </ModuleColumn>
-
-          <ModuleColumn>
             <h2>Title</h2>
-
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
               venenatis odio et vestibulum tempus. Fusce orci eros, finibus at
@@ -160,6 +202,28 @@ const IndexPage = () => {
               sed lorem nec, luctus luctus nulla. Aliquam tempor ante nisi, at
               imperdiet dui ultrices eget
             </p>
+          </ModuleColumn>
+
+          <ModuleColumn>
+            <PremiumVideo />
+          </ModuleColumn>
+        </ModuleContainer>
+
+        <ModuleContainer>
+          <ModuleColumn>
+            <h2>Title</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              venenatis odio et vestibulum tempus. Fusce orci eros, finibus at
+              mi non, tristique porta ipsum. Aenean non ligula imperdiet,
+              gravida diam vulputate, tincidunt tellus. Morbi ex lorem, placerat
+              sed lorem nec, luctus luctus nulla. Aliquam tempor ante nisi, at
+              imperdiet dui ultrices eget
+            </p>
+          </ModuleColumn>
+
+          <ModuleColumn>
+            <PremiumVideo />
           </ModuleColumn>
         </ModuleContainer>
       </Wrapper>
@@ -168,5 +232,3 @@ const IndexPage = () => {
 };
 
 export default IndexPage;
-
-export const Head = () => <title>Home Page</title>;
