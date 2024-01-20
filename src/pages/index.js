@@ -1,6 +1,7 @@
 import * as React from "react";
 import { styled, createGlobalStyle } from "styled-components";
 import { PremiumVideo } from "../components/premiumVideo";
+import Logo from "../images/logo.png";
 
 const GlobalTemplateStyle = createGlobalStyle`
 
@@ -51,11 +52,12 @@ const ModuleContainer = styled.div`
 const HeroContainer = styled.div`
   display: flex;
   gap: 50px;
-  padding: 0 0 100px 0;
+  padding: 150px 0 100px 0;
   position: relative;
   box-sizing: border-box;
   align-items: center;
   background: #555555;
+  position: relative;
 `;
 
 const ModuleColumn = styled.div`
@@ -110,19 +112,24 @@ const StyledNav = styled.nav`
   letter-spacing: 2px;
 `;
 
-const LogoBottom = styled.div`
-  height: 200px;
-  opacity: 0.5;
-  width: 350px;
-  background: green;
-  margin: 0 auto 50px;
-`;
-
 const HeroVideoWrapper = styled.div`
   video {
     width: 100%;
     object-fit: cover;
     opacity: 0.5;
+  }
+`;
+
+const LogoContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+  bottom: 75%;
+
+  .img {
+    width: 30%;
   }
 `;
 
@@ -153,9 +160,10 @@ const IndexPage = () => {
       </HeroVideoWrapper>
 
       <HeroContainer>
+        <LogoContainer>
+          <img src={Logo} />
+        </LogoContainer>
         <HeroColumn>
-          <LogoBottom />
-
           <HeroTitle>TOP SHELF IS...</HeroTitle>
 
           <div>
