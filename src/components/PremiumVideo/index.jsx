@@ -37,6 +37,7 @@ const StyledVideo = styled.video`
       controls={false}
       src={premium_1}
       loop
+
       autoPlay
       muted
     />
