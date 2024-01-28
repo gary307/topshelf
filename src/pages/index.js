@@ -6,6 +6,11 @@ import Flowers from "../images/flowers.png";
 import CrossHair from "../images/crosshair.png";
 import ClarityOverFluffVideo from "../renders/clarity_over_fluff_final.mp4";
 import DesireFullFrameVideo from "../renders/desire_fulll_frame.mp4";
+import CreativeFinal from "../renders/creative_final.mp4";
+import ProductionVideo from "../renders/production.mp4";
+import ArchWindow from "../images/arch_windoe.png";
+import Rings from "../images/rings.png";
+import HeroVideo from "../renders/reel_2018.mp4";
 
 const GlobalTemplateStyle = createGlobalStyle`
 
@@ -282,7 +287,7 @@ const AdvirtiseList = styled.ul`
     margin: 0 0 20px;
     font-size: 25px;
     font-family: "Playfair Display", arial, sans-serif;
-    letter-spacing: 3px;
+    letter-spacing: 10px;
     font-weight: 500;
   }
 `;
@@ -297,6 +302,129 @@ const DesireTitle = styled.h2`
 
 const DesireCopy = styled.p`
   color: white;
+`;
+
+const CreativeContentContainer = styled.div`
+  background: #e3a062;
+  display: flex;
+`;
+
+const CreativeDevColumn = styled.div`
+  width: 50%;
+  background: #df9c5a;
+  padding: 0 50px 50px;
+  position: relative;
+`;
+
+const ExecutionColumn = styled.div`
+  width: 50%;
+  background: #262f34;
+  position: relative;
+  background-image: url(${Rings});
+  background-size: 790px;
+  background-position: 30px 130px;
+  background-repeat: no-repeat;
+`;
+
+const CreativeDevContent = styled.div`
+  display: flex;
+  gap: 40px;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-left: 100px;
+`;
+
+const CreativeDevDetails = styled.p`
+  text-align: left;
+  max-width: 300px;
+  padding-top: 200px;
+  z-index: 999;
+`;
+
+const CreativeVideo = styled.video`
+  width: 300px;
+`;
+
+const ExecutionContent = styled.div`
+  display: flex;
+  gap: 40px;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-left: 50px;
+`;
+
+const ExecutionDetails = styled.p`
+  text-align: left;
+  max-width: 300px;
+  z-index: 9999;
+`;
+
+const ExecutionVideo = styled.video`
+  width: 280px;
+  position: absolute;
+  top: -15px;
+  left: -10px;
+`;
+
+const ExecutionVideoContainer = styled.div`
+  overflow: hidden;
+  width: 300px;
+  margin-left: -100px;
+  border-radius: 50%;
+  height: 260px;
+  width: 260px;
+  background: black;
+  top: 280px;
+  position: relative;
+`;
+
+const ArchWindowImage = styled.img`
+  position: absolute;
+  width: 365px;
+  top: 65px;
+`;
+
+const ExecutionTitle = styled.h2`
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 40px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+`;
+
+const CreativeDevTitleContainer = styled.div`
+  position: absolute;
+  height: 100%;
+  background: white;
+  top: 0;
+  left: 0;
+  width: 100px;
+  z-index: 999;
+`;
+
+const CreativeDevTitle = styled.h2`
+  position: absolute;
+  width: 800px;
+  font-size: 40px;
+  letter-spacing: 10px;
+  bottom: 40px;
+  transform-origin: 0 0;
+  letter-spacing: 10px;
+  transform: rotate(-90deg);
+  text-transform: uppercase;
+  left: 20px;
+}
+`;
+
+const CreativeDevTitleBottom = styled.div`
+  background: white;
+  height: 80px;
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
 `;
 
 const IndexPage = () => {
@@ -321,7 +449,8 @@ const IndexPage = () => {
           autoPlay
           loop
           muted
-          src="https://www.w3schools.com/html/mov_bbb.mp4"
+          // src="https://www.w3schools.com/html/mov_bbb.mp4"
+          src={HeroVideo}
         >
           <p>Description of the video...</p>
         </video>
@@ -352,6 +481,108 @@ const IndexPage = () => {
           </div>
         </HeroColumn>
       </HeroContainer>
+
+      <CreativeContentContainer>
+        <CreativeDevColumn>
+          <CreativeDevTitleContainer>
+            <CreativeDevTitle>Creative Dev</CreativeDevTitle>
+
+            <CreativeDevTitleBottom />
+          </CreativeDevTitleContainer>
+          <CreativeDevContent>
+            <ArchWindowImage src={ArchWindow} />
+            <CreativeVideo
+              src={CreativeFinal}
+              loop
+              controls={false}
+              autoPlay
+              muted
+            />
+
+            <CreativeDevDetails>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                et sapien vulputate. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Quisque et sapien vulputate. Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit. Quisque et sapien
+                vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Quisque et sapien vulputate. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Quisque et sapien vulputate. Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit. Quisque et
+                sapien vulputate.
+              </p>
+            </CreativeDevDetails>
+          </CreativeDevContent>
+        </CreativeDevColumn>
+
+        <ExecutionColumn>
+          <ExecutionTitle>Execution</ExecutionTitle>
+          <ExecutionContent>
+            <ExecutionDetails>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                et sapien vulputate. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Quisque et sapien vulputate. Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit. Quisque et sapien
+                vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Quisque et sapien vulputate. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Quisque et sapien vulputate. Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit. Quisque et
+                sapien vulputate.
+              </p>
+            </ExecutionDetails>
+            <ExecutionVideoContainer>
+              <ExecutionVideo
+                src={ProductionVideo}
+                loop
+                controls={false}
+                autoPlay
+                muted
+              />
+            </ExecutionVideoContainer>
+          </ExecutionContent>
+        </ExecutionColumn>
+      </CreativeContentContainer>
+
+      <PremiumLuxuryContainer>
+        <PremiumLuxuryColumn>
+          <PremiumLuxuryContent>
+            <DesireVideo
+              src={DesireFullFrameVideo}
+              loop
+              controls={false}
+              autoPlay
+              muted
+            />
+
+            <DesireContent>
+              <DesireTitle>Premium & Luxury</DesireTitle>
+
+              <DesireCopy>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                et sapien vulputate. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Quisque et sapien vulputate.
+              </DesireCopy>
+            </DesireContent>
+          </PremiumLuxuryContent>
+        </PremiumLuxuryColumn>
+
+        <AdvirtiseColumn>
+          <AdvirtiseTitle>Don't</AdvirtiseTitle>
+
+          <AdvirtiseList>
+            <li>Advertise</li>
+          </AdvirtiseList>
+
+          <AdvirtiseTitle>Instead</AdvirtiseTitle>
+
+          <AdvirtiseList>
+            <li>Adervtain</li>
+            <li>Aducate</li>
+            <li>Addlighten</li>
+          </AdvirtiseList>
+        </AdvirtiseColumn>
+      </PremiumLuxuryContainer>
 
       <KissContainer>
         <CrossHairImage top={"20px"} left={"20px"} src={CrossHair} />
@@ -398,46 +629,6 @@ const IndexPage = () => {
           </SaveFluffColumn>
         </SaveFluffRow>
       </SaveFluffContainer>
-
-      <PremiumLuxuryContainer>
-        <PremiumLuxuryColumn>
-          <PremiumLuxuryContent>
-            <DesireVideo
-              src={DesireFullFrameVideo}
-              loop
-              controls={false}
-              autoPlay
-              muted
-            />
-
-            <DesireContent>
-              <DesireTitle>Premium & Luxury</DesireTitle>
-
-              <DesireCopy>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                et sapien vulputate. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Quisque et sapien vulputate.
-              </DesireCopy>
-            </DesireContent>
-          </PremiumLuxuryContent>
-        </PremiumLuxuryColumn>
-
-        <AdvirtiseColumn>
-          <AdvirtiseTitle>Don't</AdvirtiseTitle>
-
-          <AdvirtiseList>
-            <li>Advertise</li>
-          </AdvirtiseList>
-
-          <AdvirtiseTitle>Instead</AdvirtiseTitle>
-
-          <AdvirtiseList>
-            <li>Adervtain</li>
-            <li>Aducate</li>
-            <li>Addlighten</li>
-          </AdvirtiseList>
-        </AdvirtiseColumn>
-      </PremiumLuxuryContainer>
 
       <Wrapper>
         <ModuleContainer>
