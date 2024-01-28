@@ -1,6 +1,6 @@
 import * as React from "react";
 import { styled, createGlobalStyle } from "styled-components";
-import { PremiumVideo } from "../components/premiumVideo";
+// import { PremiumVideo } from "../components/premiumVideo";
 import Logo from "../images/logo.png";
 import Flowers from "../images/flowers.png";
 import CrossHair from "../images/crosshair.png";
@@ -630,7 +630,7 @@ const IndexPage = () => {
         </SaveFluffRow>
       </SaveFluffContainer>
 
-      <Wrapper>
+      {/* <Wrapper>
         <ModuleContainer>
           <ModuleColumn>
             <h2>Title</h2>
@@ -648,7 +648,7 @@ const IndexPage = () => {
             <PremiumVideo loop controls={false} autoPlay muted />
           </ModuleColumn>
         </ModuleContainer>
-      </Wrapper>
+      </Wrapper> */}
     </>
   );
 };
