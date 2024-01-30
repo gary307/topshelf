@@ -11,6 +11,7 @@ import ProductionVideo from "../renders/production.mp4";
 import ArchWindow from "../images/arch_windoe.png";
 import Rings from "../images/rings.png";
 import HeroVideo from "../renders/reel_2018.mp4";
+import LuxShape from "../images/luxury_geometric_shape.png";
 
 const GlobalTemplateStyle = createGlobalStyle`
 
@@ -254,6 +255,7 @@ const PremiumLuxuryColumn = styled.div`
   height: 500px;
   display: flex;
   justify-content: center;
+  background: black;
 `;
 
 const PremiumLuxuryContent = styled.div`
