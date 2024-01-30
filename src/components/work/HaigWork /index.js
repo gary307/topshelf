@@ -1,14 +1,16 @@
 import * as React from "react";
 import { styled } from "styled-components";
 import Shankydrink from "../../../images/shankydrink.png";
-import ShankyLogo from "../../../images/shankys-whip-logo.png";
-import OstrichEmblems from "../../../images/ostrich-emblems.png";
-import WhipHeadImg from "../../../images/whip_head.png";
+import HaigLogo from "../../../images/haig_logo_white.png";
+import Glitch from "../../../images/glitch.png";
+import haigLogoEmbossedImage from "../../../images/haig_logo_embossed.jpg";
+import MakeYOurOwnRuleGif from "../../../images/Make-Your-Own-Rules.gif";
 
 const HaigWrapper = styled.div`
-  // background: url(${OstrichEmblems}), #333;
-  background: #222;
-  background-position: 140% 100px;
+  background: url(${Glitch}), #333;
+  background-blend-mode: overlay;
+  background-position: 0px 210px;
+  background-size: cover;
   background-repeat: no-repeat;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -27,7 +29,7 @@ const WorkWrapper = styled.div`
 const WorkTitle = styled.div`
   width: 100%;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 50px;
 `;
 
 const YoutubeIframe = styled.iframe`
@@ -46,6 +48,7 @@ const WorkImage = styled.img`
 const WorkDescription = styled.div`
   grid-column: span 4;
   text-align: center;
+  margin-top: 20px;
 `;
 
 const WorkDescriptionCopy = styled.div`
@@ -67,15 +70,22 @@ const WorkDescriptionCopy = styled.div`
   }
 `;
 
-const ShankyLogoImg = styled.img`
+const HaigLogoImg = styled.img`
   width: 200px;
+`;
+
+const HaigLogoEmbossed = styled.img`
+  position: absolute;
+  opacity: 0.5;
+  right: 0;
+  width: 500px;
 `;
 
 const ShankyWork = () => {
   return (
     <HaigWrapper>
       <WorkTitle>
-        <ShankyLogoImg src={ShankyLogo} alt="ShankyLogo" />
+        <HaigLogoImg src={HaigLogo} alt="ShankyLogo" />
       </WorkTitle>
       <WorkWrapper>
         <YoutubeIframe
@@ -88,9 +98,13 @@ const ShankyWork = () => {
           allowfullscreen
         ></YoutubeIframe>
 
-        <WorkImage src={Shankydrink} alt="Shankydrink" />
+        <WorkImage src={MakeYOurOwnRuleGif} alt="Shankydrink" />
 
         <WorkDescription>
+          <HaigLogoEmbossed
+            src={haigLogoEmbossedImage}
+            alt="HaigLogoEmbossed"
+          />
           <WorkDescriptionCopy>
             <h2>Haig story</h2>
             <p>

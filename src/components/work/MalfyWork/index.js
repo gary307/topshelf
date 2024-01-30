@@ -1,16 +1,19 @@
 import * as React from "react";
 import { styled } from "styled-components";
 import Shankydrink from "../../../images/shankydrink.png";
-import ShankyLogo from "../../../images/shankys-whip-logo.png";
+import MalfyLogo from "../../../images/malfy_logo.png";
 import OstrichEmblems from "../../../images/ostrich-emblems.png";
 import WhipHeadImg from "../../../images/whip_head.png";
+import AmalfiCoastImg from "../../../images/amalfi_coast.png";
+import MalfyPicOne from "../../../images/malfy_pic_1.jpg";
+import MalfyPicTwo from "../../../images/malfy_pic_2.jpg";
 
 const HaigWrapper = styled.div`
-  // background: url(${OstrichEmblems}), #333;
-  background: #www;
-  background-position: 140% 100px;
+  background: url(${AmalfiCoastImg}), #333;
+  background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 80px;
+  background-blend-mode: overlay;
+  padding-top: 40px;
   padding-bottom: 80px;
 `;
 
@@ -27,7 +30,7 @@ const WorkWrapper = styled.div`
 const WorkTitle = styled.div`
   width: 100%;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 100px;
 `;
 
 const YoutubeIframe = styled.iframe`
@@ -68,8 +71,8 @@ const WorkDescriptionCopy = styled.div`
   }
 `;
 
-const ShankyLogoImg = styled.img`
-  width: 200px;
+const MalfyLogoImg = styled.img`
+  width: 300px;
 `;
 
 const WorkImages = styled.div`
@@ -84,7 +87,7 @@ const MalfyWork = () => {
   return (
     <HaigWrapper>
       <WorkTitle>
-        <ShankyLogoImg src={ShankyLogo} alt="ShankyLogo" />
+        <MalfyLogoImg src={MalfyLogo} alt="ShankyLogo" />
       </WorkTitle>
       <WorkWrapper>
         <WorkVideoAndDescription>
@@ -99,7 +102,7 @@ const MalfyWork = () => {
           ></YoutubeIframe>
           <WorkDescription>
             <WorkDescriptionCopy>
-              <h2>Haig story</h2>
+              <h2>Malfy Story</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
                 et sapien vulputate, convallis justo fringilla, vulputate est.
@@ -123,9 +126,9 @@ const MalfyWork = () => {
         </WorkVideoAndDescription>
 
         <WorkImages>
-          <WorkImage src={Shankydrink} alt="Shankydrink" />
-          <WorkImage src={Shankydrink} alt="Shankydrink" />
-          <WorkImage src={Shankydrink} alt="Shankydrink" />
+          <WorkImage src={MalfyPicOne} alt="Shankydrink" />
+          <WorkImage src={MalfyPicTwo} alt="Shankydrink" />
+          <WorkImage src={MalfyPicTwo} alt="Shankydrink" />
         </WorkImages>
       </WorkWrapper>
     </HaigWrapper>
