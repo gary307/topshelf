@@ -1,6 +1,7 @@
 import React from "react";
 import { styled } from "styled-components";
 import DesireFullFrameVideo from "../../../renders/desire_fulll_frame.mp4";
+import LuxuryBackground from "../../../images/luxury_geometric_shape.png";
 
 const PremiumLuxuryContainer = styled.div`
   width: 100%;
@@ -25,15 +26,26 @@ const DesireVideo = styled.video`
 const PremiumLuxuryColumn = styled.div`
   background: black;
   width: 70%;
-  height: 500px;
   display: flex;
   justify-content: center;
-  background: black;
+  padding: 80px 0;
+
+  background: url(${LuxuryBackground}), #000;
+  background-repeat: no-repeat;
+  background-position: 700px 50%;
+  background-size: 1000px;
+
+  @media (max-width: 1100px) {
+    width: 50%;
+  }
 
   @media (max-width: 800px) {
     flex-direction: column;
     width: 100%;
     height: auto;
+
+    background-position: 0 550px;
+    background-size: 700px;
   }
 `;
 
@@ -42,6 +54,10 @@ const PremiumLuxuryContent = styled.div`
   max-width: 80%;
   gap: 50px;
   align-items: center;
+
+  @media (max-width: 1100px) {
+    flex-direction: column;
+  }
 
   @media (max-width: 800px) {
     flex-direction: column;
@@ -56,6 +72,10 @@ const AdvirtiseColumn = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
+
+  @media (max-width: 1100px) {
+    width: 50%;
+  }
 
   @media (max-width: 800px) {
     width: 100%;
@@ -85,11 +105,15 @@ const AdvirtiseList = styled.ul`
 `;
 
 const DesireContent = styled.div`
-  text-align: left;
-  max-width: 400px;
+  text-align: center;
 `;
 const DesireTitle = styled.h2`
-  font-size: 45px;
+  font-size: 40px;
+  text-align: center;
+
+  @media (max-width: 800px) {
+    font-size: 30px;
+  }
 `;
 
 const DesireCopy = styled.p`

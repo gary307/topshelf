@@ -6,6 +6,7 @@ import { CreativeExecution } from "../components/home/CreativeExecution";
 import { Kiss } from "../components/home/Kiss";
 import { SaveTheFluff } from "../components/home/SaveTheFluff";
 import { PremiumLuxury } from "../components/home/PremiumLuxury";
+import { Contact } from "../components/home/Contact";
 
 const IndexPage = () => {
   return (
@@ -17,6 +18,7 @@ const IndexPage = () => {
       <PremiumLuxury />
       <Kiss />
       <SaveTheFluff />
+      <Contact />
     </>
   );
 };

@@ -5,6 +5,7 @@ import MalfyWork from "../components/work/MalfyWork";
 import Header from "../components/Header";
 import LimonataWork from "../components/work/LimonataWork";
 import { GlobalTemplateStyle } from "../shared/globalTemplateStyle";
+import { Contact } from "../components/home/Contact";
 
 const IndexPage = () => {
   return (
@@ -15,6 +16,7 @@ const IndexPage = () => {
       <HaigWork />
       <MalfyWork />
       <LimonataWork />
+      <Contact />
     </>
   );
 };

@@ -2,7 +2,7 @@ import * as React from "react";
 import { styled } from "styled-components";
 import CrossHair from "../../../images/crosshair.png";
 import Logo from "../../../images/logo.png";
-import HeroVideo from "../../../renders/reel_2018.mp4";
+import HeroVideo from "../../../renders/top_shelf_hero_video.mp4";
 import Flowers from "../../../images/flowers.png";
 
 const HeroColumn = styled.div`
@@ -21,6 +21,7 @@ const HeroColumn = styled.div`
 const HeroVideoWrapper = styled.div`
   width: 100%;
   overflow: hidden;
+  line-height: 0px;
 
   video {
     width: 100%;
@@ -48,10 +49,13 @@ const HeroContainer = styled.div`
   backgrund-repeat: no-repeat;
   background-position: center;
   background-blend-mode: overlay;
+  background-blend-mode: soft-light;
   background-color: #38454d;
 
   @media (max-width: 800px) {
     padding: 80px 0 100px 0;
+    background-size: 800px;
+    background-repeat: no-repeat;
   }
 `;
 
@@ -86,6 +90,7 @@ const LogoContainer = styled.div`
 const HeroTitle = styled.h1`
   font-size: 40px;
   margin-bottom: 40px;
+  margin-top: 50px;
 `;
 
 export const Hero = () => {

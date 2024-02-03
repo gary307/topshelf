@@ -1,10 +1,10 @@
 import * as React from "react";
 import { styled } from "styled-components";
-import CrossHair from "../../../images/crosshair.png";
+import CrossHair from "../../../images/crosshair_orange.png";
 
 const KissContainer = styled.div`
   width: 100%;
-  padding: 20px;
+  padding: 40px;
   background: #fd9c5a;
   color: #9d7044;
   text-align: center;
@@ -27,12 +27,13 @@ const KissTitle = styled.h2`
   }
 `;
 
-const KissCopy = styled.p`
-  max-width: 800px;
-  margin: 30px auto 20px;
-  font-size: 20px;
-  font-weight: 300;
+const KissCopy = styled.h3`
+  max-width: 90%;
+  margin: 50px auto 20px;
+  font-size: 25px;
+  // font-weight: 300;
   line-height: 1.5;
+  color: #9d7044;
 `;
 
 const CrossHairImage = styled.img`

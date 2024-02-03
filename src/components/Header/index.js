@@ -50,9 +50,9 @@ const Header = () => {
         <HeaderContent>
           <StyledNav>
             <Link to="/">Home</Link>
-            <Link>People</Link>
+            {/* <Link>People</Link> */}
             <Link to="/work">Our work</Link>
-            <Link>Contact</Link>
+            <Link to="#contact">Contact</Link>
           </StyledNav>
         </HeaderContent>
       </StyledNav>

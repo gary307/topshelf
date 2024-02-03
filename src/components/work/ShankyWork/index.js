@@ -5,6 +5,7 @@ import Shanlybnpttleshpt from "../../../images/shanlybnpttleshpt.jpg";
 import ShankyLogo from "../../../images/shankys-whip-logo.png";
 import OstrichEmblems from "../../../images/ostrich-emblems.png";
 import WhipHeadImg from "../../../images/whip_head.png";
+import OstrichImage from "../../../images/ostrich.png";
 
 const ShankyWrapper = styled.div`
   background: url(${OstrichEmblems}), #333;
@@ -137,14 +138,7 @@ const ShankyWork = () => {
         <WorkDescription>
           <BackgroundShankyImg src={WhipHeadImg} alt="Shankydrink" />
           <WorkDescriptionCopy>
-            <h2>Shankys story</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              et sapien vulputate, convallis justo fringilla, vulputate est.
-              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-              posuere cubilia curae; In libero elit, fermentum ac turpis in,
-              convallis feugiat tortor. Cras in massa metus. Morbi pretium justo
-            </p>
+            <h2>SHANKY'S Tale</h2>
 
             <p>
               quis felis luctus posuere. Sed nec nibh vitae augue gravida
@@ -160,7 +154,7 @@ const ShankyWork = () => {
 
         <WorkSmallerImages>
           <WorkSmallerImage src={Shankydrink} alt="Shankydrink" />
-          <WorkSmallerImage src={Shankydrink} alt="Shankydrink" />
+          <WorkSmallerImage src={OstrichImage} alt="Shankydrink" />
         </WorkSmallerImages>
       </WorkWrapper>
     </ShankyWrapper>

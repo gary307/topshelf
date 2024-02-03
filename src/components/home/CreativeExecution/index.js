@@ -4,6 +4,7 @@ import ArchWindow from "../../../images/arch_windoe.png";
 import CreativeFinal from "../../../renders/creative_final.mp4";
 import ProductionVideo from "../../../renders/production.mp4";
 import Rings from "../../../images/rings.png";
+import Neurons from "../../../images/neurons.png";
 
 const CreativeContentContainer = styled.div`
   background: #e3a062;
@@ -21,9 +22,16 @@ const CreativeDevColumn = styled.div`
   position: relative;
   box-sizing: border-box;
 
+  background-image: url(${Neurons});
+
+  background-size: 1300px;
+  background-position: 200px 0px;
+  background-repeat: no-repeat;
+
   @media (max-width: 800px) {
     width: 100%;
     padding: 0;
+    overflow: hidden;
   }
 `;
 

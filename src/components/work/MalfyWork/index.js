@@ -48,7 +48,7 @@ const WorkImage = styled.img`
   grid-column: span 3;
   width: 100%;
   object-fit: cover;
-  height: 200px;
+  height: 229px;
   margin-bottom: 20px;
 `;
 
@@ -145,7 +145,6 @@ const MalfyWork = () => {
 
         <WorkImages>
           <WorkImage src={MalfyPicOne} alt="Shankydrink" />
-          <WorkImage src={MalfyPicTwo} alt="Shankydrink" />
           <WorkImage src={MalfyPicTwo} alt="Shankydrink" />
         </WorkImages>
       </WorkWrapper>

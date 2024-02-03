@@ -19,11 +19,14 @@ const SaveFluffContainer = styled.div`
   backgrund-repeat: no-repeat;
   background-position: center;
   background-blend-mode: overlay;
+  background-blend-mode: soft-light;
   background-color: #38454d;
 
   @media (max-width: 1000px) {
-    padding: 100px 0 100px 0;
+    padding: 100px 20px 100px 20px;
     flex-direction: column;
+    background-size: 800px;
+    // background-repeat: no-repeat;
   }
 `;
 
@@ -62,19 +65,20 @@ const FluffVideo = styled.video`
   }
 `;
 
-const DesireVideo = styled.video`
-  width: 300px;
-`;
-
 const SaveFluffTitle = styled.h2`
   text-transform: uppercase;
-  font-weight: 300;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
+  font-size: 35px;
+
+  @media (max-width: 800px) {
+    font-szie: 30px;
+  }
 `;
 
 const SaveFluffCopy = styled.p`
-  font-size: 26px;
-  font-weight: 300;
+  @media (max-width: 800px) {
+    // font-size: 20px;
+  }
 `;
 
 export const SaveTheFluff = () => {

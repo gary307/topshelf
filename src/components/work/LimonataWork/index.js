@@ -4,9 +4,10 @@ import AmalfiCoastImg from "../../../images/amalfi_coast.png";
 import MalfyPicOne from "../../../images/malfy_pic_1.jpg";
 import MalfyPicTwo from "../../../images/malfy_pic_2.jpg";
 import LimonataLogo from "../../../images/cin_cin_limonata.png";
+import LimonataBg from "../../../images/limonata_bg.jpg";
 
 const Wrapper = styled.div`
-  background: url(${AmalfiCoastImg}), #333;
+  background: url(${LimonataBg}), #333;
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: overlay;
