@@ -1,7 +1,5 @@
 import * as React from "react";
-import { styled, createGlobalStyle } from "styled-components";
-// import { PremiumVideo } from "../components/premiumVideo";
-import Logo from "../images/logo.png";
+import { styled } from "styled-components";
 import Flowers from "../images/flowers.png";
 import CrossHair from "../images/crosshair.png";
 import ClarityOverFluffVideo from "../renders/clarity_over_fluff_final.mp4";
@@ -10,71 +8,10 @@ import CreativeFinal from "../renders/creative_final.mp4";
 import ProductionVideo from "../renders/production.mp4";
 import ArchWindow from "../images/arch_windoe.png";
 import Rings from "../images/rings.png";
-import HeroVideo from "../renders/reel_2018.mp4";
-import LuxShape from "../images/luxury_geometric_shape.png";
-
-const GlobalTemplateStyle = createGlobalStyle`
-
-body {
-  font-family: 'Quicksand', arial, sans-serif;
-  background: #262121;
-  color: white;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'Playfair Display', arial, sans-serif;
-  color: orange;
-}
-
-
-p {
-  font-family: 'Quicksand', arial, sans-serif;
-}
-`;
-
-const Wrapper = styled.div`
-  width: 100%;
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
-  color: "#232129",
-  padding: 96,
-  font-family: arial;
-`;
-
-const ModuleContainer = styled.div`
-  display: flex;
-  gap: 50px;
-  margin: 100px 0;
-  position: relative;
-  box-sizing: border-box;
-  align-items: center;
-
-  @media (max-width: 1200px) {
-    flex-direction: column;
-  }
-`;
-
-const HeroContainer = styled.div`
-  display: flex;
-  gap: 50px;
-  padding: 250px 0 200px 0;
-  position: relative;
-  box-sizing: border-box;
-  align-items: center;
-  background: #555555;
-  position: relative;
-  background-image: url(${Flowers});
-  background-size: contain;
-  backgrund-repeat: no-repeat;
-  background-position: center;
-  background-blend-mode: overlay;
-  background-color: #38454d;
-`;
+import Header from "../components/Header";
+import { GlobalTemplateStyle } from "../shared/globalTemplateStyle";
+import { Hero } from "../components/home/Hero";
+import { CreativeExecution } from "../components/home/CreativeExecution";
 
 const SaveFluffContainer = styled.div`
   display: flex;
@@ -91,81 +28,6 @@ const SaveFluffContainer = styled.div`
   background-position: center;
   background-blend-mode: overlay;
   background-color: #38454d;
-`;
-
-const ModuleColumn = styled.div`
-  width: 50%;
-  box-sizing: border-box;
-
-  ${(props) => `
-    text-align: ${props.align || "left"};
-    justify-content: ${props.align || "left"};
-  `}
-`;
-
-const HeroColumn = styled.div`
-  box-sizing: border-box;
-  text-align: center;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 800px;
-`;
-
-const Header = styled.div`
-  width: 100%;
-  position: absolute;
-  top: 0;
-  z-index: 100;
-`;
-
-const HeroTitle = styled.h1`
-  font-size: 40px;
-  margin-bottom: 40px;
-`;
-
-const HeaderContent = styled.div`
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  height: 80px;
-  align-items: center;
-  padding: 0 20px;
-`;
-
-const StyledNav = styled.nav`
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  width: 100%;
-  font-family: "Playfair Display", arial, sans-serif;
-  font-size: 17px;
-  letter-spacing: 2px;
-  gap: 100px;
-`;
-
-const HeroVideoWrapper = styled.div`
-  video {
-    width: 100%;
-    object-fit: cover;
-    opacity: 0.5;
-  }
-`;
-
-const LogoContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  z-index: 9999;
-  width: 100%;
-  bottom: 65%;
-
-  img {
-    @media (max-width: 800px) {
-      width: 300px;
-    }
-  }
 `;
 
 const CrossHairImage = styled.img`
@@ -247,6 +109,10 @@ const PremiumLuxuryContainer = styled.div`
   position: relative;
   padding: 0;
   display: flex;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 
 const PremiumLuxuryColumn = styled.div`
@@ -256,6 +122,12 @@ const PremiumLuxuryColumn = styled.div`
   display: flex;
   justify-content: center;
   background: black;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
 `;
 
 const PremiumLuxuryContent = styled.div`
@@ -263,6 +135,10 @@ const PremiumLuxuryContent = styled.div`
   max-width: 80%;
   gap: 50px;
   align-items: center;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 
 const AdvirtiseColumn = styled.div`
@@ -272,6 +148,10 @@ const AdvirtiseColumn = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
+
+  @media (max-width: 800px) {
+    width: 100%;
+  }
 `;
 
 const AdvirtiseTitle = styled.h3`
@@ -433,118 +313,10 @@ const IndexPage = () => {
   return (
     <>
       <GlobalTemplateStyle />
-      <Header>
-        <StyledNav>
-          <HeaderContent>
-            <StyledNav>
-              <a>Home</a>
-              <a>People</a>
-              <a>Our work</a>
-              <a>Contact</a>
-            </StyledNav>
-          </HeaderContent>
-        </StyledNav>
-      </Header>
+      <Header />
 
-      <HeroVideoWrapper>
-        <video
-          autoPlay
-          loop
-          muted
-          // src="https://www.w3schools.com/html/mov_bbb.mp4"
-          src={HeroVideo}
-        >
-          <p>Description of the video...</p>
-        </video>
-      </HeroVideoWrapper>
-
-      <HeroContainer>
-        <CrossHairImage top={"20px"} left={"20px"} src={CrossHair} />
-        <CrossHairImage top={"20px"} right={"20px"} src={CrossHair} />
-        <CrossHairImage bottom={"20px"} left={"20px"} src={CrossHair} />
-        <CrossHairImage bottom={"20px"} right={"20px"} src={CrossHair} />
-        <LogoContainer>
-          <img src={Logo} />
-        </LogoContainer>
-        <HeroColumn>
-          <HeroTitle>TOP SHELF IS...</HeroTitle>
-
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              et sapien vulputate, convallis justo fringilla, vulputate est.
-              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-              posuere cubilia curae; In libero elit, fermentum ac turpis in,
-              convallis feugiat tortor. Cras in massa metus. Morbi pretium justo
-              quis felis luctus posuere. Sed nec nibh vitae augue gravida
-              tincidunt fringilla quis mi. Ut ultrices maximus diam, lobortis
-              fermentum erat ultrices eget.
-            </p>
-          </div>
-        </HeroColumn>
-      </HeroContainer>
-
-      <CreativeContentContainer>
-        <CreativeDevColumn>
-          <CreativeDevTitleContainer>
-            <CreativeDevTitle>Creative Dev</CreativeDevTitle>
-
-            <CreativeDevTitleBottom />
-          </CreativeDevTitleContainer>
-          <CreativeDevContent>
-            <ArchWindowImage src={ArchWindow} />
-            <CreativeVideo
-              src={CreativeFinal}
-              loop
-              controls={false}
-              autoPlay
-              muted
-            />
-
-            <CreativeDevDetails>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                et sapien vulputate. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Quisque et sapien vulputate. Lorem ipsum dolor
-                sit amet, consectetur adipiscing elit. Quisque et sapien
-                vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit. Quisque et sapien vulputate. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Quisque et sapien vulputate. Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit. Quisque et
-                sapien vulputate.
-              </p>
-            </CreativeDevDetails>
-          </CreativeDevContent>
-        </CreativeDevColumn>
-
-        <ExecutionColumn>
-          <ExecutionTitle>Execution</ExecutionTitle>
-          <ExecutionContent>
-            <ExecutionDetails>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                et sapien vulputate. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Quisque et sapien vulputate. Lorem ipsum dolor
-                sit amet, consectetur adipiscing elit. Quisque et sapien
-                vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit. Quisque et sapien vulputate. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Quisque et sapien vulputate. Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit. Quisque et
-                sapien vulputate.
-              </p>
-            </ExecutionDetails>
-            <ExecutionVideoContainer>
-              <ExecutionVideo
-                src={ProductionVideo}
-                loop
-                controls={false}
-                autoPlay
-                muted
-              />
-            </ExecutionVideoContainer>
-          </ExecutionContent>
-        </ExecutionColumn>
-      </CreativeContentContainer>
+      <Hero />
+      <CreativeExecution />
 
       <PremiumLuxuryContainer>
         <PremiumLuxuryColumn>
@@ -586,7 +358,7 @@ const IndexPage = () => {
         </AdvirtiseColumn>
       </PremiumLuxuryContainer>
 
-      <KissContainer>
+      {/* <KissContainer>
         <CrossHairImage top={"20px"} left={"20px"} src={CrossHair} />
         <CrossHairImage top={"20px"} right={"20px"} src={CrossHair} />
         <CrossHairImage bottom={"20px"} left={"20px"} src={CrossHair} />
@@ -600,9 +372,9 @@ const IndexPage = () => {
           ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
           curae
         </KissCopy>
-      </KissContainer>
+      </KissContainer> */}
 
-      <SaveFluffContainer>
+      {/* <SaveFluffContainer>
         <CrossHairImage top={"20px"} left={"20px"} src={CrossHair} />
         <CrossHairImage top={"20px"} right={"20px"} src={CrossHair} />
         <CrossHairImage bottom={"20px"} left={"20px"} src={CrossHair} />
@@ -630,7 +402,7 @@ const IndexPage = () => {
             </div>
           </SaveFluffColumn>
         </SaveFluffRow>
-      </SaveFluffContainer>
+      </SaveFluffContainer> */}
 
       {/* <Wrapper>
         <ModuleContainer>
