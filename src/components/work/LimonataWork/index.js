@@ -1,11 +1,11 @@
 import * as React from "react";
 import { styled } from "styled-components";
-import MalfyLogo from "../../../images/malfy_logo.png";
 import AmalfiCoastImg from "../../../images/amalfi_coast.png";
 import MalfyPicOne from "../../../images/malfy_pic_1.jpg";
 import MalfyPicTwo from "../../../images/malfy_pic_2.jpg";
+import LimonataLogo from "../../../images/cin_cin_limonata.png";
 
-const HaigWrapper = styled.div`
+const Wrapper = styled.div`
   background: url(${AmalfiCoastImg}), #333;
   background-size: cover;
   background-repeat: no-repeat;
@@ -80,7 +80,7 @@ const WorkDescriptionCopy = styled.div`
   }
 `;
 
-const MalfyLogoImg = styled.img`
+const LogoImg = styled.img`
   width: 300px;
 `;
 
@@ -100,18 +100,18 @@ const WorkVideoAndDescription = styled.div`
   }
 `;
 
-const MalfyWork = () => {
+const LimonataWork = () => {
   return (
-    <HaigWrapper>
+    <Wrapper>
       <WorkTitle>
-        <MalfyLogoImg src={MalfyLogo} alt="ShankyLogo" />
+        <LogoImg src={LimonataLogo} alt="ShankyLogo" />
       </WorkTitle>
       <WorkWrapper>
         <WorkVideoAndDescription>
           <YoutubeIframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/984DCHNX94s?si=B_iVyMmugF38zwZO?color=white"
+            src="https://www.youtube.com/embed/4eowDv_vNU0?si=vAf8zzG7K0eLKfaZ"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -149,8 +149,8 @@ const MalfyWork = () => {
           <WorkImage src={MalfyPicTwo} alt="Shankydrink" />
         </WorkImages>
       </WorkWrapper>
-    </HaigWrapper>
+    </Wrapper>
   );
 };
 
-export default MalfyWork;
+export default LimonataWork;

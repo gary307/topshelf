@@ -64,6 +64,7 @@ const CreativeDevDetails = styled.p`
   @media (max-width: 800px) {
     margin: 0 auto;
     padding-top: 0;
+    margin-bottom: 40px;
   }
 `;
 
@@ -85,6 +86,7 @@ const ExecutionContent = styled.div`
 
   @media (max-width: 800px) {
     flex-direction: column;
+    margin-left: 0;
   }
 `;
 
@@ -92,6 +94,10 @@ const ExecutionDetails = styled.p`
   text-align: left;
   max-width: 300px;
   z-index: 9999;
+
+  @media (max-width: 800px) {
+    margin: 0 auto;
+  }
 `;
 
 const ExecutionVideo = styled.video`
@@ -116,6 +122,8 @@ const ExecutionVideoContainer = styled.div`
     position: relative;
     top: auto;
     margin: 0 auto;
+
+    margin-bottom: 40px;
   }
 `;
 

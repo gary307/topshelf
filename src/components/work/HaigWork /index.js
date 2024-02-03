@@ -1,6 +1,5 @@
 import * as React from "react";
 import { styled } from "styled-components";
-import Shankydrink from "../../../images/shankydrink.png";
 import HaigLogo from "../../../images/haig_logo_white.png";
 import Glitch from "../../../images/glitch.png";
 import haigLogoEmbossedImage from "../../../images/haig_logo_embossed.jpg";
@@ -14,6 +13,13 @@ const HaigWrapper = styled.div`
   background-repeat: no-repeat;
   padding-top: 80px;
   padding-bottom: 80px;
+
+  @media (max-width: 1000px) {
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-position: 0px;
+  }
 `;
 
 const WorkWrapper = styled.div`
@@ -36,6 +42,14 @@ const YoutubeIframe = styled.iframe`
   grid-column: span 5;
   width: 100%;
   height: 400px;
+
+  @media (max-width: 1000px) {
+    grid-column: span 8;
+  }
+
+  @media (max-width: 600px) {
+    height: 250px;
+  }
 `;
 
 const WorkImage = styled.img`
@@ -43,12 +57,19 @@ const WorkImage = styled.img`
   width: 100%;
   object-fit: cover;
   height: 400px;
+
+  @media (max-width: 1000px) {
+    grid-column: span 8;
+  }
 `;
 
 const WorkDescription = styled.div`
   grid-column: span 4;
   text-align: center;
   margin-top: 20px;
+  @media (max-width: 1000px) {
+    grid-column: span 8;
+  }
 `;
 
 const WorkDescriptionCopy = styled.div`
@@ -91,7 +112,7 @@ const ShankyWork = () => {
         <YoutubeIframe
           width="560"
           height="315"
-          src="https://www.youtube.com/embed/jU4e85h9DDI?si=OgTpQYlCCVLWQlT1"
+          src="https://www.youtube.com/embed/mKGJG_vJbyw?si=7Ej7AxgHMDqXmC5D"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

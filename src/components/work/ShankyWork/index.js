@@ -12,6 +12,11 @@ const ShankyWrapper = styled.div`
   background-repeat: no-repeat;
   padding-top: 80px;
   padding-bottom: 80px;
+
+  @media (max-width: 1000px) {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
 `;
 
 const WorkWrapper = styled.div`
@@ -22,6 +27,12 @@ const WorkWrapper = styled.div`
   max-width: 1400px;
   margin: 0 auto;
   margin-top: 50px;
+
+  @media (max-width: 1000px) {
+    padding: 30px;
+    box-sizing: border-box;
+    margin-top: 20px;
+  }
 `;
 
 const WorkTitle = styled.div`
@@ -33,6 +44,10 @@ const WorkTitle = styled.div`
 const YoutubeIframe = styled.iframe`
   grid-column: span 4;
   width: 100%;
+
+  @media (max-width: 1000px) {
+    grid-column: span 8;
+  }
 `;
 
 const WorkImage = styled.img`
@@ -40,11 +55,18 @@ const WorkImage = styled.img`
   width: 100%;
   object-fit: cover;
   height: 300px;
+  @media (max-width: 1000px) {
+    grid-column: span 8;
+  }
 `;
 
 const WorkDescription = styled.div`
   grid-column: span 4;
   text-align: center;
+
+  @media (max-width: 1000px) {
+    grid-column: span 8;
+  }
 `;
 
 const WorkDescriptionCopy = styled.div`
@@ -68,6 +90,10 @@ const WorkDescriptionCopy = styled.div`
 
 const WorkSmallerImages = styled.div`
   grid-column: span 4;
+
+  @media (max-width: 1000px) {
+    grid-column: span 8;
+  }
 `;
 
 const WorkSmallerImage = styled.img`
@@ -97,7 +123,7 @@ const ShankyWork = () => {
         <YoutubeIframe
           width="560"
           height="315"
-          src="https://www.youtube.com/embed/jU4e85h9DDI?si=OgTpQYlCCVLWQlT1"
+          src="https://www.youtube.com/embed/984DCHNX94s?si=B_iVyMmugF38zwZO?color=white"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
