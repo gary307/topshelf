@@ -113,9 +113,11 @@ export const PremiumLuxury = () => {
             <DesireTitle>Premium & Luxury</DesireTitle>
 
             <DesireCopy>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              et sapien vulputate. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Quisque et sapien vulputate.
+              Whatever our medium, we’re always design led. Viewing everything
+              with a seasoned art director's eye, we understand the aesthetics
+              of premium and luxury brands. We eat sleep and breathe your brand
+              to ensure your product design and philosophy lives throughout all
+              your content.
             </DesireCopy>
           </DesireContent>
         </PremiumLuxuryContent>

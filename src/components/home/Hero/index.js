@@ -70,6 +70,7 @@ const LogoContainer = styled.div`
   z-index: 9999;
   width: 100%;
   bottom: 65%;
+  mix-blend-mode: plus-lighter;
 
   @media (max-width: 800px) {
     bottom: 85%;
@@ -108,14 +109,11 @@ export const Hero = () => {
 
           <div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              et sapien vulputate, convallis justo fringilla, vulputate est.
-              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-              posuere cubilia curae; In libero elit, fermentum ac turpis in,
-              convallis feugiat tortor. Cras in massa metus. Morbi pretium justo
-              quis felis luctus posuere. Sed nec nibh vitae augue gravida
-              tincidunt fringilla quis mi. Ut ultrices maximus diam, lobortis
-              fermentum erat ultrices eget.
+              …a one-stop creative production shop. From primordial creative
+              development through to all stages of production. We help your
+              brand find its voice, then amplify it to have meaningful
+              conversations with your audience. Beautifully crafted content with
+              real stopping power.
             </p>
           </div>
         </HeroColumn>

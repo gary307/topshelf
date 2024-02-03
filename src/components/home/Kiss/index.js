@@ -57,10 +57,9 @@ export const Kiss = () => {
       <KissTitle>KISS</KissTitle>
 
       <KissCopy>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et
-        sapien vulputate, convallis justo fringilla, vulputate est. Vestibulum
-        ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-        curae
+        We streamline the process to ensure as much budget as possible goes on
+        the screen. Clients work directly with creative talent. No waste.
+        Nothing lost in translation.
       </KissCopy>
     </KissContainer>
   );

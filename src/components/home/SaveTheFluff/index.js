@@ -96,13 +96,15 @@ export const SaveTheFluff = () => {
           />
         </SaveFluffColumn>
         <SaveFluffColumn>
-          <SaveFluffTitle>Save the fluff</SaveFluffTitle>
+          <SaveFluffTitle>KEEPING IT REAL</SaveFluffTitle>
 
           <div>
             <SaveFluffCopy>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              et sapien vulputate. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Quisque et sapien vulputate.
+              We’re not about disposable social fodder, fluffy margetting lingo
+              or meaningless analytics. We use a healthy balance of data
+              informed creative strategy and talented human minds to deliver
+              clear and effective branded content that truly connects with its
+              audience.
             </SaveFluffCopy>
           </div>
         </SaveFluffColumn>

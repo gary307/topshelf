@@ -17,8 +17,9 @@ const CreativeContentContainer = styled.div`
 const CreativeDevColumn = styled.div`
   width: 50%;
   background: #df9c5a;
-  padding: 0 50px 50px;
+  padding: 0 40px 70px;
   position: relative;
+  box-sizing: border-box;
 
   @media (max-width: 800px) {
     width: 100%;
@@ -32,12 +33,17 @@ const ExecutionColumn = styled.div`
   position: relative;
   background-image: url(${Rings});
   background-size: 790px;
-  background-position: 30px 130px;
+  background-position: 40px 130px;
   background-repeat: no-repeat;
+  box-sizing: border-box;
+
+  @media (max-width: 1200px) {
+    // width: 100%;
+    background-position: center 140px;
+  }
 
   @media (max-width: 800px) {
     width: 100%;
-    background-position: 130px 130px;
   }
 `;
 
@@ -46,12 +52,15 @@ const CreativeDevContent = styled.div`
   gap: 0px;
   max-width: 700px;
   margin: 0 auto;
-  margin-left: 10%;
+  // margin-left: 10%;
+  justify-content: space-around;
+  gap: 20px;
 
-  @media (max-width: 800px) {
+  @media (max-width: 1200px) {
     flex-direction: column;
     margin-left: 0;
     margin: 0 auto;
+    align-items: center;
   }
 `;
 
@@ -61,30 +70,35 @@ const CreativeDevDetails = styled.p`
   padding-top: 200px;
   z-index: 999;
 
+  @media (max-width: 1200px) {
+    margin-top: 0;
+    padding-top: 40px;
+    // max-width: none;
+  }
+
   @media (max-width: 800px) {
     margin: 0 auto;
-    padding-top: 0;
+    // padding-top: 0;
     margin-bottom: 40px;
   }
 `;
 
 const CreativeVideo = styled.video`
-  width: 85%;
-  margin-top: 90px;
+  width: 295px;
+  margin-left: -20px;
   @media (max-width: 800px) {
-    margin: 0 auto;
+    // margin: 0 auto;
     margin-top: 30px;
   }
 `;
 
 const ExecutionContent = styled.div`
   display: flex;
-  gap: 40px;
   max-width: 700px;
   margin: 0 auto;
-  margin-left: 50px;
+  margin-left: 70px;
 
-  @media (max-width: 800px) {
+  @media (max-width: 1200px) {
     flex-direction: column;
     margin-left: 0;
   }
@@ -95,7 +109,7 @@ const ExecutionDetails = styled.p`
   max-width: 300px;
   z-index: 9999;
 
-  @media (max-width: 800px) {
+  @media (max-width: 1200px) {
     margin: 0 auto;
   }
 `;
@@ -110,7 +124,7 @@ const ExecutionVideo = styled.video`
 const ExecutionVideoContainer = styled.div`
   overflow: hidden;
   width: 300px;
-  margin-left: -100px;
+  margin-left: -65px;
   border-radius: 50%;
   height: 260px;
   width: 260px;
@@ -118,21 +132,20 @@ const ExecutionVideoContainer = styled.div`
   top: 280px;
   position: relative;
 
-  @media (max-width: 800px) {
+  @media (max-width: 1200px) {
     position: relative;
     top: auto;
     margin: 0 auto;
-
     margin-bottom: 40px;
+    margin-top: 30px;
   }
 `;
 
 const ArchWindowImage = styled.img`
   position: absolute;
-  //   width: 365px;
-  top: 65px;
-  width: 103%;
-
+  top: -28px;
+  width: 360px;
+  margin-left: -22px;
   @media (max-width: 800px) {
     top: 0;
   }
@@ -156,6 +169,8 @@ const CreativeDevTitleContainer = styled.div`
   width: 100px;
   z-index: 999;
 
+  display: none;
+
   @media (max-width: 800px) {
     position: relative;
     width: 100%;
@@ -167,7 +182,7 @@ const CreativeDevTitle = styled.h2`
   width: 800px;
   font-size: 40px;
   letter-spacing: 10px;
-  bottom: 40px;
+  bottom: 80px;
   transform-origin: 0 0;
   letter-spacing: 10px;
   transform: rotate(-90deg);
@@ -205,23 +220,32 @@ const CreativeDevTitleBottom = styled.div`
 
 const ArchWindowCOntainer = styled.div`
   position: relative;
-  margin: 0 auto;
-  overflow: hidden;
-  width: 350px;
+  // margin: 0 auto;
+  // width: 350px;
+  width: 250px;
 
-  @media (max-width: 1450px) {
-    width: 250px;
+  @media (max-width: 800px) {
+    // width: 250px;
   }
+`;
+
+const CreativeTitle = styled.h2`
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 40px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  color: white;
 `;
 
 export const CreativeExecution = () => {
   return (
     <CreativeContentContainer>
       <CreativeDevColumn>
+        <CreativeTitle>CREATIVE</CreativeTitle>
         <CreativeDevTitleContainer>
-          <CreativeDevTitle>Creative Dev</CreativeDevTitle>
-
-          {/* <CreativeDevTitleMobile>Creative Dev</CreativeDevTitle> */}
+          <CreativeDevTitle>CREATIVE</CreativeDevTitle>
 
           <CreativeDevTitleBottom />
         </CreativeDevTitleContainer>
@@ -238,17 +262,15 @@ export const CreativeExecution = () => {
           </ArchWindowCOntainer>
 
           <CreativeDevDetails>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              et sapien vulputate. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Quisque et sapien vulputate. Lorem ipsum dolor
-              sit amet, consectetur adipiscing elit. Quisque et sapien
-              vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit. Quisque et sapien vulputate. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Quisque et sapien vulputate. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit. Quisque et
-              sapien vulputate.
-            </p>
+            <o>
+              We work with top shelf copywriters, art directors, designers,
+              illustrators, animators, directors and cinematographers to deliver
+              fresh, innovative thinking and visually mesmerizing content.
+              Clients work directly with their lead creative talent, so nothing
+              is lost in translation. From primordial brief development to
+              expanding existing campaigns across new platforms, we put the best
+              brains on the job.
+            </o>
           </CreativeDevDetails>
         </CreativeDevContent>
       </CreativeDevColumn>
@@ -258,15 +280,11 @@ export const CreativeExecution = () => {
         <ExecutionContent>
           <ExecutionDetails>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              et sapien vulputate. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Quisque et sapien vulputate. Lorem ipsum dolor
-              sit amet, consectetur adipiscing elit. Quisque et sapien
-              vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit. Quisque et sapien vulputate. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Quisque et sapien vulputate. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit. Quisque et
-              sapien vulputate.
+              We handle all stages of production across video, photography,
+              design and print. We approach production from a creative
+              perspective and ensure the same people are involved from initial
+              creative through final delivery, keeping a focus on quality. We
+              streamline production as much as possible to stay fast and agile.
             </p>
           </ExecutionDetails>
           <ExecutionVideoContainer>
