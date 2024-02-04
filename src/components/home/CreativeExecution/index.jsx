@@ -245,7 +245,7 @@ export const CreativeExecution = () => {
   const creativeVideo = React.useRef(null);
 
   React.useEffect(() => {
-    creativeVideo.current.play();
+    // creativeVideo.current.play()
   }, []);
 
   return (
@@ -265,7 +265,7 @@ export const CreativeExecution = () => {
               src={CreativeFinal}
               loop={true}
               controls={false}
-              // autoPlay
+              autoPlay={true}
               muted={true}
               playsInline={true}
             />
@@ -303,8 +303,8 @@ export const CreativeExecution = () => {
               loop
               controls={false}
               autoPlay
-              playsinline
               muted
+              playsInline={true}
             />
           </ExecutionVideoContainer>
         </ExecutionContent>
