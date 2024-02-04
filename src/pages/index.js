@@ -9,6 +9,7 @@ import { PremiumLuxury } from "../components/home/PremiumLuxury";
 import { Contact } from "../components/home/Contact";
 import styled from "styled-components";
 import { Sustainability } from "../components/home/Sustainability";
+import { MeetTheTeam } from "../components/home/MeetTheTeam";
 
 const Wrapper = styled.div``;
 
@@ -28,8 +29,10 @@ const IndexPage = () => {
       <CreativeExecution />
       <PremiumLuxury />
       <Kiss />
+      <MeetTheTeam />
       <Sustainability />
       <SaveTheFluff />
+
       <Contact />
     </Wrapper>
   );

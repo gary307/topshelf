@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "gatsby";
-
 import { styled } from "styled-components";
 
 const HeaderWrapper = styled.div`
@@ -51,7 +50,7 @@ const Header = () => {
         <HeaderContent>
           <StyledNav>
             <Link to="/">Home</Link>
-            {/* <Link>People</Link> */}
+            <Link to="/#meet-the-team">People</Link>
             <Link to="/work">Our work</Link>
             <Link to="#contact">Contact</Link>
           </StyledNav>
