@@ -61,7 +61,7 @@ const Row = styled.div`
   @media (max-width: 1100px) {
     flex-direction: column-reverse;
     justify-content: center;
-    text-align: left;
+    text-align: center;
     gap: 40px;
   }
 `;

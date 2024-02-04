@@ -30,7 +30,7 @@ const HeroVideoWrapper = styled.div`
     object-fit: cover;
     opacity: 0.5;
 
-    @media (max-width: 800px) {
+    @media (max-width: 1000px) {
       width: 200%;
       margin-left: -50%;
     }
@@ -54,6 +54,11 @@ const HeroContainer = styled.div`
   background-blend-mode: soft-light;
   background-color: #38454d;
 
+  @media (max-width: 1000px) {
+    padding: 150px 0 100px 0;
+    background-repeat: no-repeat;
+  }
+
   @media (max-width: 800px) {
     padding: 80px 0 100px 0;
     background-size: 800px;
@@ -75,14 +80,22 @@ const LogoContainer = styled.div`
   position: absolute;
   z-index: 9999;
   width: 100%;
-  bottom: 65%;
+  bottom: 67%;
   mix-blend-mode: plus-lighter;
+
+  @media (max-width: 1000px) {
+    bottom: 71%;
+  }
 
   @media (max-width: 800px) {
     bottom: 85%;
   }
 
   img {
+    @media (max-width: 1000px) {
+      width: 300px;
+    }
+
     @media (max-width: 800px) {
       width: 200px;
     }
@@ -104,7 +117,7 @@ export const Hero = () => {
     <Wrapper>
       <Gradiant />
       <HeroVideoWrapper>
-        <video autoPlay loop muted src={HeroVideo}>
+        <video autoPlay loop muted playsinline src={HeroVideo}>
           <p>Description of the video...</p>
         </video>
       </HeroVideoWrapper>
