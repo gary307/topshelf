@@ -261,6 +261,7 @@ export const CreativeExecution = () => {
               loop
               controls={false}
               autoPlay
+              playsInline
               muted
             />
           </ArchWindowCOntainer>
@@ -297,6 +298,7 @@ export const CreativeExecution = () => {
               loop
               controls={false}
               autoPlay
+              playsinline
               muted
             />
           </ExecutionVideoContainer>

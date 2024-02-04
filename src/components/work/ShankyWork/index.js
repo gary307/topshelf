@@ -157,7 +157,7 @@ const ShankyWork = () => {
         <WorkDescription>
           <BackgroundShankyImg src={WhipHeadImg} alt="Shankydrink" />
           <WorkDescriptionCopy>
-            <h2>SHANKY'S</h2>
+            <h2>SHANKY'S Tale</h2>
 
             <p>
               Premium Irish whiskey liquor Shanky’s Whip wanted to amplify its

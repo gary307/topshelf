@@ -120,7 +120,7 @@ const MalfyWork = () => {
 
           <WorkDescription>
             <WorkDescriptionCopy>
-              <h2>Malfy</h2>
+              <h2>Malfy's Story</h2>
               <p>
                 New Italian challenger brand, Malfy wanted a visually iconic TV
                 commercial that celebrates everything about life on the

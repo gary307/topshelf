@@ -127,7 +127,7 @@ const ShankyWork = () => {
             alt="HaigLogoEmbossed"
           />
           <WorkDescriptionCopy>
-            <h2>HAIG</h2>
+            <h2>HAIG'S STORY </h2>
             <p>
               Haig whiskey wanted to launch their new bottle design and spread
               the Make Your Own Rules message. Showing the product at home in a
