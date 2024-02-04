@@ -263,13 +263,14 @@ export const CreativeExecution = () => {
         </CreativeDevTitleContainer>
         <CreativeDevContent>
           <ArchWindowCOntainer>
-            <ArchWindowImage src={ArchWindow} />
+            {/* <ArchWindowImage src={ArchWindow} /> */}
             <CreativeVideo
               ref={creativeVideo}
               src={CreativeFinal}
-              // loop={true}
+              loop
               controls={false}
               // autoPlay={true}
+              autoPlay
               muted={true}
               playsInline={true}
             />
@@ -307,9 +308,9 @@ export const CreativeExecution = () => {
               src={ProductionVideo}
               loop
               controls={false}
-              autoPlay={true}
-              muted={true}
-              playsInline={true}
+              autoPlay
+              muted
+              playsInline
             />
           </ExecutionVideoContainer>
         </ExecutionContent>
