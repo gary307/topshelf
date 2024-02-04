@@ -66,6 +66,10 @@ const SaveFluffCopy = styled.p`
   letter-spacing: 1px;
   opacity: 0.7;
   font-size: 30px;
+
+  @media (max-width: 800px) {
+    font-size: 20px;
+  }
 `;
 
 export const Contact = () => {
