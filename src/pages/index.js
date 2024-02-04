@@ -29,10 +29,9 @@ const IndexPage = () => {
       <CreativeExecution />
       <PremiumLuxury />
       <Kiss />
-      <MeetTheTeam />
-      <Sustainability />
       <SaveTheFluff />
-
+      <Sustainability />
+      <MeetTheTeam />
       <Contact />
     </Wrapper>
   );

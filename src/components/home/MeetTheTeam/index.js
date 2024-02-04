@@ -201,15 +201,14 @@ export const MeetTheTeam = () => {
 
                 <ProfileHeader>Chris started his career…</ProfileHeader>
                 <ProfileCopy>
-                  Chris started his career… as an ad man, working at London’s
-                  top London creative agencies, collaborating with top
-                  photographers, illustrators and directors to create high
-                  quality content for some of the world's biggest brands.
-                  Through his career Chris has been an accomplished creative,
-                  art director, writer and film director, making him a powerful
-                  brand storyteller. Chris founded Top Shelf through his love of
-                  beverage brands, their high aesthetic, product design and
-                  unique brand stories.
+                  …as an ad man, working at London’s top London creative
+                  agencies, collaborating with top photographers, illustrators
+                  and directors to create high quality content for some of the
+                  world's biggest brands. Through his career Chris has been an
+                  accomplished creative, art director, writer and film director,
+                  making him a powerful brand storyteller. Chris founded Top
+                  Shelf through his love of beverage brands, their high
+                  aesthetic, product design and unique brand stories.
                 </ProfileCopy>
               </Details>
             </Column>

@@ -81,7 +81,7 @@ const SaveFluffTitle = styled.h2`
 
 const SaveFluffCopy = styled.p`
   letter-spacing: 1px;
-  opacity: 0.7;
+  // opacity: 0.7;
   // font-size: 30px;
   color: #9d7044;
 `;
@@ -121,6 +121,7 @@ const SustainVideoPLayer = styled.video`
   position: absolute;
   right: 201px;
   top: 119px;
+  z-index: 2;
 
   @media (max-width: 1000px) {
     position: relative;

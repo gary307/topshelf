@@ -243,25 +243,10 @@ const CreativeTitle = styled.h2`
   color: white;
 `;
 
-const ZeroOne = styled.img`
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  background: white;
-`;
-
-const ZeroTwo = styled.img`
-  position: absolute;
-  right: 20px;
-  top: 20px;
-`;
-
 export const CreativeExecution = () => {
   return (
     <CreativeContentContainer>
       <CreativeDevColumn>
-        <ZeroOne src={ZeroOnePic} />
-
         <CreativeTitle>CREATIVE</CreativeTitle>
         <CreativeDevTitleContainer>
           <CreativeDevTitle>CREATIVE</CreativeDevTitle>
@@ -295,7 +280,6 @@ export const CreativeExecution = () => {
       </CreativeDevColumn>
 
       <ExecutionColumn>
-        <ZeroTwo src={ZeroTwoPic} />
         <ExecutionTitle>Execution</ExecutionTitle>
         <ExecutionContent>
           <ExecutionDetails>

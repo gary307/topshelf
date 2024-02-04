@@ -88,6 +88,8 @@ const AdvirtiseColumn = styled.div`
 const AdvirtiseTitle = styled.h3`
   text-transform: uppercase;
   font-size: 15px;
+  margin-top: 0;
+  margin-bottom: 20px;
 `;
 
 const AdvirtiseList = styled.ul`
@@ -121,18 +123,10 @@ const DesireCopy = styled.p`
   color: white;
 `;
 
-const ZeroThree = styled.img`
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  background: white;
-`;
-
 export const PremiumLuxury = () => {
   return (
     <PremiumLuxuryContainer>
       <PremiumLuxuryColumn>
-        <ZeroThree src={ZeroThreePic} />
         <PremiumLuxuryContent>
           <DesireVideo
             src={DesireFullFrameVideo}
@@ -168,7 +162,7 @@ export const PremiumLuxury = () => {
         <AdvirtiseList>
           <li>Adervtain</li>
           <li>Aducate</li>
-          <li>Addlighten</li>
+          <li>Adlighten</li>
         </AdvirtiseList>
       </AdvirtiseColumn>
     </PremiumLuxuryContainer>

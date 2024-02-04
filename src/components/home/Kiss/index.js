@@ -5,7 +5,7 @@ import CrossHair from "../../../images/crosshair_orange.png";
 const KissContainer = styled.div`
   width: 100%;
   padding: 40px;
-  background: #fd9c5a;
+  background: #df9c5a;
   color: #9d7044;
   text-align: center;
   box-sizing: border-box;
