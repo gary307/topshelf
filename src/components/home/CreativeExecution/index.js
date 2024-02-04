@@ -243,9 +243,11 @@ const CreativeTitle = styled.h2`
 
 export const CreativeExecution = () => {
   const creativeVideo = React.useRef(null);
+  const executionVideo = React.useRef(null);
 
   React.useEffect(() => {
-    // creativeVideo.current.play()
+    creativeVideo.current.play();
+    executionVideo.current.play();
   }, []);
 
   return (
@@ -265,7 +267,7 @@ export const CreativeExecution = () => {
               src={CreativeFinal}
               loop={true}
               controls={false}
-              autoPlay={true}
+              // autoPlay={true}
               muted={true}
               playsInline={true}
             />
@@ -299,11 +301,12 @@ export const CreativeExecution = () => {
           </ExecutionDetails>
           <ExecutionVideoContainer>
             <ExecutionVideo
+              ref={executionVideo}
               src={ProductionVideo}
               loop
               controls={false}
-              autoPlay
-              muted
+              // autoPlay={true}
+              muted={true}
               playsInline={true}
             />
           </ExecutionVideoContainer>
