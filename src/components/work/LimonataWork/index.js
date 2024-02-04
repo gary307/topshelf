@@ -1,7 +1,7 @@
 import * as React from "react";
 import { styled } from "styled-components";
 import LimonataLogo from "../../../images/cin_cin_limonata.png";
-import LimonataBg from "../../../images/limonata_bg.jpg";
+import LimonataBg from "../../../images/Limonata_bg.jpg";
 import LimonataImg from "../../../images/limonata_image.jpg";
 
 const Wrapper = styled.div`
