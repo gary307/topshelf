@@ -266,7 +266,7 @@ export const CreativeExecution = () => {
               loop
               controls={false}
               autoPlay
-              playsInline
+              playsinline
               muted
             />
           </ArchWindowCOntainer>
