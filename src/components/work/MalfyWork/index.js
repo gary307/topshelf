@@ -6,10 +6,10 @@ import MalfyPicOne from "../../../images/malfy_pic_1.jpg";
 import MalfyPicTwo from "../../../images/malfy_pic_2.jpg";
 
 const HaigWrapper = styled.div`
-  background: url(${AmalfiCoastImg}), #333;
+  background: url(${AmalfiCoastImg}), #232b30;
   background-size: cover;
   background-repeat: no-repeat;
-  background-blend-mode: overlay;
+  background-blend-mode: multiply;
   padding-top: 40px;
   padding-bottom: 80px;
 

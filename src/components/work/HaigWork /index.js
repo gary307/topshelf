@@ -6,7 +6,7 @@ import haigLogoEmbossedImage from "../../../images/haig_logo_embossed.jpg";
 import MakeYOurOwnRuleGif from "../../../images/Make-Your-Own-Rules.gif";
 
 const HaigWrapper = styled.div`
-  background: url(${Glitch}), #333;
+  background: url(${Glitch}), #232b30;
   background-blend-mode: overlay;
   background-position: 0px 210px;
   background-size: cover;

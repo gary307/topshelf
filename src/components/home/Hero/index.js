@@ -4,6 +4,7 @@ import CrossHair from "../../../images/crosshair.png";
 import Logo from "../../../images/logo.png";
 import HeroVideo from "../../../renders/top_shelf_hero_video.mp4";
 import Flowers from "../../../images/flowers.png";
+import { Gradiant } from "../../../shared/Gradiant";
 
 const HeroColumn = styled.div`
   box-sizing: border-box;
@@ -12,6 +13,7 @@ const HeroColumn = styled.div`
   width: 100%;
   max-width: 800px;
   padding: 0 20px;
+  z-index: 999;
 
   @media (max-width: 800px) {
     margin-top: 40px;
@@ -93,9 +95,14 @@ const HeroTitle = styled.h1`
   margin-top: 50px;
 `;
 
+const Wrapper = styled.div`
+  position: relative;
+`;
+
 export const Hero = () => {
   return (
-    <>
+    <Wrapper>
+      <Gradiant />
       <HeroVideoWrapper>
         <video autoPlay loop muted src={HeroVideo}>
           <p>Description of the video...</p>
@@ -123,6 +130,6 @@ export const Hero = () => {
           </div>
         </HeroColumn>
       </HeroContainer>
-    </>
+    </Wrapper>
   );
 };

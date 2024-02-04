@@ -4,6 +4,7 @@ import CrossHair from "../../../images/crosshair.png";
 import ClarityOverFluffVideo from "../../../renders/clarity_over_fluff_final.mp4";
 import DesireFullFrameVideo from "../../../renders/desire_fulll_frame.mp4";
 import Flowers from "../../../images/flowers.png";
+import { Gradiant } from "../../../shared/Gradiant";
 
 const SaveFluffContainer = styled.div`
   display: flex;
@@ -46,6 +47,7 @@ const SaveFluffRow = styled.div`
   justify-content: space-between;
   gap: 50px;
   align-items: center;
+  z-index: 999;
 
   @media (max-width: 1000px) {
     flex-direction: column;
@@ -81,38 +83,46 @@ const SaveFluffCopy = styled.p`
   }
 `;
 
+const Wrapper = styled.div`
+  position: relative;
+  box-sizing: border-box;
+`;
+
 export const SaveTheFluff = () => {
   return (
-    <SaveFluffContainer>
-      <CrossHairImage top={"20px"} left={"20px"} src={CrossHair} />
-      <CrossHairImage top={"20px"} right={"20px"} src={CrossHair} />
-      <CrossHairImage bottom={"20px"} left={"20px"} src={CrossHair} />
-      <CrossHairImage bottom={"20px"} right={"20px"} src={CrossHair} />
+    <Wrapper>
+      <Gradiant />
+      <SaveFluffContainer>
+        <CrossHairImage top={"20px"} left={"20px"} src={CrossHair} />
+        <CrossHairImage top={"20px"} right={"20px"} src={CrossHair} />
+        <CrossHairImage bottom={"20px"} left={"20px"} src={CrossHair} />
+        <CrossHairImage bottom={"20px"} right={"20px"} src={CrossHair} />
 
-      <SaveFluffRow>
-        <SaveFluffColumn>
-          <FluffVideo
-            src={ClarityOverFluffVideo}
-            loop
-            controls={false}
-            autoPlay
-            muted
-          />
-        </SaveFluffColumn>
-        <SaveFluffColumn>
-          <SaveFluffTitle>KEEPING IT REAL</SaveFluffTitle>
+        <SaveFluffRow>
+          <SaveFluffColumn>
+            <FluffVideo
+              src={ClarityOverFluffVideo}
+              loop
+              controls={false}
+              autoPlay
+              muted
+            />
+          </SaveFluffColumn>
+          <SaveFluffColumn>
+            <SaveFluffTitle>KEEPING IT REAL</SaveFluffTitle>
 
-          <div>
-            <SaveFluffCopy>
-              We’re not about disposable social fodder, fluffy margetting lingo
-              or meaningless analytics. We use a healthy balance of data
-              informed creative strategy and talented human minds to deliver
-              clear and effective branded content that truly connects with its
-              audience.
-            </SaveFluffCopy>
-          </div>
-        </SaveFluffColumn>
-      </SaveFluffRow>
-    </SaveFluffContainer>
+            <div>
+              <SaveFluffCopy>
+                We’re not about disposable social fodder, fluffy margetting
+                lingo or meaningless analytics. We use a healthy balance of data
+                informed creative strategy and talented human minds to deliver
+                clear and effective branded content that truly connects with its
+                audience.
+              </SaveFluffCopy>
+            </div>
+          </SaveFluffColumn>
+        </SaveFluffRow>
+      </SaveFluffContainer>
+    </Wrapper>
   );
 };

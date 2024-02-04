@@ -1,16 +1,14 @@
 import * as React from "react";
 import { styled } from "styled-components";
-import AmalfiCoastImg from "../../../images/amalfi_coast.png";
-import MalfyPicOne from "../../../images/malfy_pic_1.jpg";
-import MalfyPicTwo from "../../../images/malfy_pic_2.jpg";
 import LimonataLogo from "../../../images/cin_cin_limonata.png";
 import LimonataBg from "../../../images/limonata_bg.jpg";
+import LimonataImg from "../../../images/limonata_img.jpg";
 
 const Wrapper = styled.div`
   background: url(${LimonataBg}), #333;
   background-size: cover;
   background-repeat: no-repeat;
-  background-blend-mode: overlay;
+  // background-blend-mode: overlay;
   padding-top: 40px;
   padding-bottom: 80px;
 
@@ -49,7 +47,7 @@ const WorkImage = styled.img`
   grid-column: span 3;
   width: 100%;
   object-fit: cover;
-  height: 200px;
+  height: 484px;
   margin-bottom: 20px;
 `;
 
@@ -145,9 +143,7 @@ const LimonataWork = () => {
         </WorkVideoAndDescription>
 
         <WorkImages>
-          <WorkImage src={MalfyPicOne} alt="Shankydrink" />
-          <WorkImage src={MalfyPicTwo} alt="Shankydrink" />
-          <WorkImage src={MalfyPicTwo} alt="Shankydrink" />
+          <WorkImage src={LimonataImg} alt="Shankydrink" />
         </WorkImages>
       </WorkWrapper>
     </Wrapper>

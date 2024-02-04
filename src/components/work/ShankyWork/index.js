@@ -8,7 +8,7 @@ import WhipHeadImg from "../../../images/whip_head.png";
 import OstrichImage from "../../../images/ostrich.png";
 
 const ShankyWrapper = styled.div`
-  background: url(${OstrichEmblems}), #333;
+  background: url(${OstrichEmblems}), #232b30;
   background-position: 140% 100px;
   background-repeat: no-repeat;
   padding-top: 80px;

@@ -41,13 +41,12 @@ const ExecutionColumn = styled.div`
   position: relative;
   background-image: url(${Rings});
   background-size: 790px;
-  background-position: 40px 130px;
+  background-position: 107px 215px;
   background-repeat: no-repeat;
   box-sizing: border-box;
 
-  @media (max-width: 1200px) {
-    // width: 100%;
-    background-position: center 140px;
+  @media (max-width: 1250px) {
+    background-position: center 350px;
   }
 
   @media (max-width: 800px) {
@@ -60,11 +59,10 @@ const CreativeDevContent = styled.div`
   gap: 0px;
   max-width: 700px;
   margin: 0 auto;
-  // margin-left: 10%;
   justify-content: space-around;
   gap: 20px;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1250px) {
     flex-direction: column;
     margin-left: 0;
     margin: 0 auto;
@@ -78,7 +76,7 @@ const CreativeDevDetails = styled.p`
   padding-top: 200px;
   z-index: 999;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1250px) {
     margin-top: 0;
     padding-top: 40px;
     // max-width: none;
@@ -95,7 +93,6 @@ const CreativeVideo = styled.video`
   width: 295px;
   margin-left: -20px;
   @media (max-width: 800px) {
-    // margin: 0 auto;
     margin-top: 30px;
   }
 `;
@@ -106,9 +103,10 @@ const ExecutionContent = styled.div`
   margin: 0 auto;
   margin-left: 70px;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1250px) {
     flex-direction: column;
     margin-left: 0;
+    max-width: none;
   }
 `;
 
@@ -117,30 +115,30 @@ const ExecutionDetails = styled.p`
   max-width: 300px;
   z-index: 9999;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1250px) {
     margin: 0 auto;
+    max-width: 300px;
   }
 `;
 
 const ExecutionVideo = styled.video`
   width: 280px;
   position: absolute;
-  top: -15px;
-  left: -10px;
+  top: -7px;
+  left: -5px;
 `;
 
 const ExecutionVideoContainer = styled.div`
   overflow: hidden;
   width: 300px;
-  margin-left: -65px;
   border-radius: 50%;
-  height: 260px;
-  width: 260px;
+  height: 270px;
+  width: 270px;
   background: black;
-  top: 280px;
+  top: 360px;
   position: relative;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1250px) {
     position: relative;
     top: auto;
     margin: 0 auto;
@@ -231,10 +229,6 @@ const ArchWindowCOntainer = styled.div`
   // margin: 0 auto;
   // width: 350px;
   width: 250px;
-
-  @media (max-width: 800px) {
-    // width: 250px;
-  }
 `;
 
 const CreativeTitle = styled.h2`

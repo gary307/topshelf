@@ -1,24 +1,21 @@
 import React from "react";
 import { styled } from "styled-components";
 import CrossHair from "../../../images/crosshair.png";
-import ClarityOverFluffVideo from "../../../renders/clarity_over_fluff_final.mp4";
-import DesireFullFrameVideo from "../../../renders/desire_fulll_frame.mp4";
-import Flowers from "../../../images/flowers.png";
-import MessageBottleImage from "../../../images/message_in_a_bottle.png";
+import MessageBottleImage from "../../../images/message_in_a_bottle_two.png";
 
 const SaveFluffContainer = styled.div`
   display: flex;
   gap: 50px;
-  padding: 100px 0 100px 0;
+  padding: 120px 0 120px 0;
   position: relative;
   box-sizing: border-box;
   align-items: center;
   position: relative;
 
   background: url(${MessageBottleImage});
-  background-size: 800px;
+  background-size: 1500px;
   background-repeat: no-repeat;
-  background-position: 100% 0%;
+  background-position: right bottom;
 
   @media (max-width: 1000px) {
     padding: 100px 20px 100px 20px;
@@ -88,9 +85,7 @@ export const Contact = () => {
             <SaveFluffCopy>No: 07793 057342</SaveFluffCopy>
           </div>
         </SaveFluffColumn>
-        <SaveFluffColumn>
-          {/* <BottleImage src={MessageBottleImage} /> */}
-        </SaveFluffColumn>
+        <SaveFluffColumn></SaveFluffColumn>
       </SaveFluffRow>
     </SaveFluffContainer>
   );

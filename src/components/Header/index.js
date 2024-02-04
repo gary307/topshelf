@@ -8,6 +8,7 @@ const HeaderWrapper = styled.div`
   position: absolute;
   top: 0;
   z-index: 100;
+  z-index: 999;
 `;
 
 const HeaderContent = styled.div`
