@@ -50,7 +50,7 @@ const Header = () => {
         <HeaderContent>
           <StyledNav>
             <Link to="/">Home</Link>
-            <Link to="/#meet-the-team">People</Link>
+            <Link to="/#people">People</Link>
             <Link to="/work">Our work</Link>
             <Link to="#contact">Contact</Link>
           </StyledNav>

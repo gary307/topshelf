@@ -179,7 +179,7 @@ const MeetTeamTitleMobile = styled.h2`
 
 export const MeetTheTeam = () => {
   return (
-    <Wrapper id="meet-the-team">
+    <Wrapper id="people">
       <Gradiant />
 
       <MeetTeamTitle>People</MeetTeamTitle>
