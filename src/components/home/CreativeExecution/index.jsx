@@ -263,11 +263,11 @@ export const CreativeExecution = () => {
             <CreativeVideo
               ref={creativeVideo}
               src={CreativeFinal}
-              loop
+              loop={true}
               controls={false}
-              autoPlay
-              playsinline
-              muted
+              // autoPlay
+              muted={true}
+              playsInline={true}
             />
           </ArchWindowCOntainer>
 
