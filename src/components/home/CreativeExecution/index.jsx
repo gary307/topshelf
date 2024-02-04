@@ -5,8 +5,6 @@ import CreativeFinal from "../../../renders/creative_final.mp4";
 import ProductionVideo from "../../../renders/production.mp4";
 import Rings from "../../../images/rings.png";
 import Neurons from "../../../images/neurons.png";
-import ZeroOnePic from "../../../images/zero_one.png";
-import ZeroTwoPic from "../../../images/zero_two.png";
 
 const CreativeContentContainer = styled.div`
   background: #e3a062;
@@ -244,6 +242,12 @@ const CreativeTitle = styled.h2`
 `;
 
 export const CreativeExecution = () => {
+  const creativeVideo = React.useRef(null);
+
+  React.useEffect(() => {
+    creativeVideo.current.play();
+  }, []);
+
   return (
     <CreativeContentContainer>
       <CreativeDevColumn>
@@ -257,6 +261,7 @@ export const CreativeExecution = () => {
           <ArchWindowCOntainer>
             <ArchWindowImage src={ArchWindow} />
             <CreativeVideo
+              ref={creativeVideo}
               src={CreativeFinal}
               loop
               controls={false}

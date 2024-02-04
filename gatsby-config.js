@@ -4,6 +4,8 @@
 module.exports = {
   siteMetadata: {
     siteUrl: `https://www.yourdomain.tld`,
+    title: `Top Shelf Content Prouction`,
+    description: `A one-stop creative production shop. From primordial creative development through to all stages of production`,
   },
   plugins: [
     "gatsby-plugin-styled-components",
