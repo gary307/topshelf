@@ -246,8 +246,10 @@ export const CreativeExecution = () => {
   const executionVideo = React.useRef(null);
 
   React.useEffect(() => {
-    creativeVideo.current.play();
-    executionVideo.current.play();
+    setTimeout(() => {
+      creativeVideo.current.play();
+      executionVideo.current.play();
+    }, 2000);
   }, []);
 
   return (
@@ -265,7 +267,7 @@ export const CreativeExecution = () => {
             <CreativeVideo
               ref={creativeVideo}
               src={CreativeFinal}
-              loop={true}
+              // loop={true}
               controls={false}
               // autoPlay={true}
               muted={true}
@@ -305,7 +307,7 @@ export const CreativeExecution = () => {
               src={ProductionVideo}
               loop
               controls={false}
-              // autoPlay={true}
+              autoPlay={true}
               muted={true}
               playsInline={true}
             />
