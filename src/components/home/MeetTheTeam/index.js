@@ -3,6 +3,7 @@ import { styled } from "styled-components";
 import CrossHair from "../../../images/crosshair.png";
 import { Gradiant } from "../../../shared/Gradiant";
 import GeraldineProfile from "../../../images/geraldineProfilePic.png";
+import ChrisProfilePic from "../../../images/chris_profile_pic.png";
 
 const Container = styled.div`
   display: flex;
@@ -215,7 +216,7 @@ export const MeetTheTeam = () => {
             <Column>
               <ProfileImageContainer>
                 <ProfilImageBorder />
-                <ProfileImage src={GeraldineProfile} />
+                <ProfileImage src={ChrisProfilePic} />
               </ProfileImageContainer>
             </Column>
           </Row>

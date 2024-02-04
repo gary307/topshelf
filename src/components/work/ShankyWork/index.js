@@ -124,30 +124,47 @@ const ShankyWork = () => {
         <YoutubeIframe
           width="560"
           height="315"
-          src="https://www.youtube.com/embed/984DCHNX94s?si=B_iVyMmugF38zwZO?color=white"
+          src="https://www.youtube.com/embed/rSjDTVwskT0?si=qx315-AI3SG3QZEy"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></YoutubeIframe>
 
-        <WorkImage src={Shankydrink} alt="Shankydrink" />
-        <WorkImage src={Shanlybnpttleshpt} alt="Shankydrink" />
+        <YoutubeIframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/xrqFYuhsrSY?si=l3e1GYFlv75fEGjq"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></YoutubeIframe>
+
+        <YoutubeIframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Cii6HM2IRV0?si=CNlPrs-Rp-H8BPxM
+          "
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></YoutubeIframe>
+
         <WorkImage src={Shanlybnpttleshpt} alt="Shankydrink" />
 
         <WorkDescription>
           <BackgroundShankyImg src={WhipHeadImg} alt="Shankydrink" />
           <WorkDescriptionCopy>
-            <h2>SHANKY'S Tale</h2>
+            <h2>SHANKY'S</h2>
 
             <p>
-              quis felis luctus posuere. Sed nec nibh vitae augue gravida
-              tincidunt fringilla quis mi. Ut ultrices maximus diam, lobortis
-              fermentum erat ultrices eget. posuere cubilia curae; In libero
-              elit, fermentum ac turpis in, convallis feugiat tortor. Cras in
-              massa metus. Morbi pretium justo quis felis luctus posuere. Sed
-              nec nibh vitae augue gravida tincidunt fringilla quis mi. Ut
-              ultrices maximus diam, lobortis fermentum erat ultrices eget.
+              Premium Irish whiskey liquor Shanky’s Whip wanted to amplify its
+              authentic Irish roots. The brand was born from folk legend that
+              spoke of a jockey and his ostrich, so we created a video campaign
+              gushing with Irish charm and quirky humor, celebrating everything
+              about the Emerald Isle of days gone by.
             </p>
           </WorkDescriptionCopy>
         </WorkDescription>

@@ -2,6 +2,7 @@ import React from "react";
 import { styled } from "styled-components";
 import DesireFullFrameVideo from "../../../renders/desire_fulll_frame.mp4";
 import LuxuryBackground from "../../../images/luxury_geometric_shape.png";
+import ZeroThreePic from "../../../images/zero_three.png";
 
 const PremiumLuxuryContainer = styled.div`
   width: 100%;
@@ -120,10 +121,18 @@ const DesireCopy = styled.p`
   color: white;
 `;
 
+const ZeroThree = styled.img`
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: white;
+`;
+
 export const PremiumLuxury = () => {
   return (
     <PremiumLuxuryContainer>
       <PremiumLuxuryColumn>
+        <ZeroThree src={ZeroThreePic} />
         <PremiumLuxuryContent>
           <DesireVideo
             src={DesireFullFrameVideo}

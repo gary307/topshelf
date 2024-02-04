@@ -118,24 +118,10 @@ const LimonataWork = () => {
 
           <WorkDescription>
             <WorkDescriptionCopy>
-              <h2>Malfy Story</h2>
+              <h2>Limonata twist</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                et sapien vulputate, convallis justo fringilla, vulputate est.
-                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-                posuere cubilia curae; In libero elit, fermentum ac turpis in,
-                convallis feugiat tortor. Cras in massa metus. Morbi pretium
-                justo
-              </p>
-
-              <p>
-                quis felis luctus posuere. Sed nec nibh vitae augue gravida
-                tincidunt fringilla quis mi. Ut ultrices maximus diam, lobortis
-                fermentum erat ultrices eget. posuere cubilia curae; In libero
-                elit, fermentum ac turpis in, convallis feugiat tortor. Cras in
-                massa metus. Morbi pretium justo quis felis luctus posuere. Sed
-                nec nibh vitae augue gravida tincidunt fringilla quis mi. Ut
-                ultrices maximus diam, lobortis fermentum erat ultrices eget.
+                Lemon infused RTD vodka lemonade brand want to show their
+                product in its natural natural habitat in the Italian coastline.
               </p>
             </WorkDescriptionCopy>
           </WorkDescription>

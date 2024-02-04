@@ -120,24 +120,12 @@ const MalfyWork = () => {
 
           <WorkDescription>
             <WorkDescriptionCopy>
-              <h2>Malfy Story</h2>
+              <h2>Malfy</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                et sapien vulputate, convallis justo fringilla, vulputate est.
-                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-                posuere cubilia curae; In libero elit, fermentum ac turpis in,
-                convallis feugiat tortor. Cras in massa metus. Morbi pretium
-                justo
-              </p>
-
-              <p>
-                quis felis luctus posuere. Sed nec nibh vitae augue gravida
-                tincidunt fringilla quis mi. Ut ultrices maximus diam, lobortis
-                fermentum erat ultrices eget. posuere cubilia curae; In libero
-                elit, fermentum ac turpis in, convallis feugiat tortor. Cras in
-                massa metus. Morbi pretium justo quis felis luctus posuere. Sed
-                nec nibh vitae augue gravida tincidunt fringilla quis mi. Ut
-                ultrices maximus diam, lobortis fermentum erat ultrices eget.
+                New Italian challenger brand, Malfy wanted a visually iconic TV
+                commercial that celebrates everything about life on the
+                beautiful Amalfi coast. We also created a suite of short videos
+                and stills that performed well on social.
               </p>
             </WorkDescriptionCopy>
           </WorkDescription>
