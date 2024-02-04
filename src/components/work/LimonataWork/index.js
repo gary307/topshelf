@@ -2,13 +2,12 @@ import * as React from "react";
 import { styled } from "styled-components";
 import LimonataLogo from "../../../images/cin_cin_limonata.png";
 import LimonataBg from "../../../images/limonata_bg.jpg";
-import LimonataImg from "../../../images/limonata_img.jpg";
+import LimonataImg from "../../../images/limonata_image.jpg";
 
 const Wrapper = styled.div`
   background: url(${LimonataBg}), #333;
   background-size: cover;
   background-repeat: no-repeat;
-  // background-blend-mode: overlay;
   padding-top: 40px;
   padding-bottom: 80px;
 
