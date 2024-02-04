@@ -62,6 +62,7 @@ const Row = styled.div`
     flex-direction: column-reverse;
     justify-content: center;
     text-align: left;
+    gap: 40px;
   }
 `;
 
@@ -82,6 +83,10 @@ const Column = styled.div`
 const ProfileImageContainer = styled.div`
   position: relative;
   width: 400px;
+
+  @media (max-width: 700px) {
+    width: 300px;
+  }
 `;
 
 const ProfileImage = styled.img`
@@ -106,6 +111,10 @@ const ProfilImageBorder = styled.div`
 
   @media (max-width: 1100px) {
     right: auto;
+  }
+
+  @media (max-width: 700px) {
+    height: 280px;
   }
 `;
 
