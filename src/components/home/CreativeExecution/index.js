@@ -246,10 +246,10 @@ export const CreativeExecution = () => {
   const executionVideo = React.useRef(null);
 
   React.useEffect(() => {
-    setTimeout(() => {
-      creativeVideo.current.play();
-      executionVideo.current.play();
-    }, 2000);
+    // setTimeout(() => {
+    creativeVideo.current.play();
+    executionVideo.current.play();
+    // }, 2000);
   }, []);
 
   return (
@@ -270,7 +270,7 @@ export const CreativeExecution = () => {
               loop
               controls={false}
               // autoPlay={true}
-              autoPlay
+              // autoPlay
               muted={true}
               playsInline={true}
             />
