@@ -86,6 +86,7 @@ const CreativeDevDetails = styled.p`
     margin: 0 auto;
     // padding-top: 0;
     margin-bottom: 40px;
+    text-align: center;
   }
 `;
 
