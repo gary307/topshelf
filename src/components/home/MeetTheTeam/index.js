@@ -2,7 +2,7 @@ import React from "react";
 import { styled } from "styled-components";
 import CrossHair from "../../../images/crosshair.png";
 import { Gradiant } from "../../../shared/Gradiant";
-import GeraldineProfile from "../../../images/geraldineProfilePic.png";
+import GeraldineProfile from "../../../images/geraldine_2.png";
 import ChrisProfilePic from "../../../images/chris_profile_pic.png";
 
 const Container = styled.div`
