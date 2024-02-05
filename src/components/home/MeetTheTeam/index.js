@@ -89,6 +89,10 @@ const ProfileImageContainer = styled.div`
   @media (max-width: 700px) {
     width: 300px;
   }
+
+  @media (max-width: 500px) {
+    width: 250px;
+  }
 `;
 
 const ProfileImage = styled.img`
@@ -117,6 +121,10 @@ const ProfilImageBorder = styled.div`
 
   @media (max-width: 700px) {
     height: 280px;
+  }
+
+  @media (max-width: 500px) {
+    height: 210px;
   }
 `;
 

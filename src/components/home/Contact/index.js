@@ -48,8 +48,11 @@ const SaveFluffRow = styled.div`
 
 const SaveFluffColumn = styled.div`
   text-align: center;
-  // max-width: 400px;
   width: 50%;
+
+  @media (max-width: 800px) {
+    width: 80%;
+  }
 `;
 
 const SaveFluffTitle = styled.h2`

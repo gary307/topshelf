@@ -22,6 +22,10 @@ const PremiumLuxuryContainer = styled.div`
 
 const DesireVideo = styled.video`
   width: 300px;
+
+  @media (max-width: 500px) {
+    width: 250px;
+  }
 `;
 
 const PremiumLuxuryColumn = styled.div`

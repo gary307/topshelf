@@ -42,6 +42,7 @@ const SaveFluffRow = styled.div`
 
   @media (max-width: 1000px) {
     flex-direction: column-reverse;
+    gap: 0px;
   }
 `;
 
@@ -128,6 +129,10 @@ const SustainVideoPLayer = styled.video`
     position: relative;
     top: 0;
     right: auto;
+  }
+
+  @media (max-width: 500px) {
+    width: 250px;
   }
 `;
 

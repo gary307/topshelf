@@ -118,6 +118,7 @@ const ExecutionDetails = styled.p`
   @media (max-width: 1250px) {
     margin: 0 auto;
     max-width: 300px;
+    text-align: center;
   }
 `;
 
