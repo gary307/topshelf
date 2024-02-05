@@ -11,10 +11,12 @@ const HaigWrapper = styled.div`
   background-position: 0px 210px;
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 20px;
   padding-top: 80px;
   padding-bottom: 80px;
 
   @media (max-width: 1000px) {
+    padding: 0;
     padding: 20px;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -30,6 +32,10 @@ const WorkWrapper = styled.div`
   max-width: 1400px;
   margin: 0 auto;
   margin-top: 50px;
+
+  @media (max-width: 1000px) {
+    max-width: 700px;
+  }
 `;
 
 const WorkTitle = styled.div`
@@ -48,7 +54,7 @@ const YoutubeIframe = styled.iframe`
   }
 
   @media (max-width: 600px) {
-    height: 250px;
+    height: 220px;
   }
 `;
 

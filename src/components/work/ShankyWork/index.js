@@ -11,10 +11,12 @@ const ShankyWrapper = styled.div`
   background: url(${OstrichEmblems}), #232b30;
   background-position: 140% 100px;
   background-repeat: no-repeat;
+  padding: 20px;
   padding-top: 80px;
   padding-bottom: 80px;
 
   @media (max-width: 1000px) {
+    padding: 20px;
     padding-top: 20px;
     padding-bottom: 40px;
   }
@@ -30,9 +32,9 @@ const WorkWrapper = styled.div`
   margin-top: 50px;
 
   @media (max-width: 1000px) {
-    padding: 30px;
+    max-width: 700px;
     box-sizing: border-box;
-    margin-top: 20px;
+    margin-top: 40px;
   }
 `;
 
@@ -49,15 +51,23 @@ const YoutubeIframe = styled.iframe`
   @media (max-width: 1000px) {
     grid-column: span 8;
   }
+
+  @media (max-width: 500px) {
+    height: 220px;
+  }
 `;
 
 const WorkImage = styled.img`
   grid-column: span 4;
   width: 100%;
   object-fit: cover;
-  height: 300px;
+  height: 312px;
   @media (max-width: 1000px) {
     grid-column: span 8;
+  }
+
+  @media (max-width: 500px) {
+    height: 200px;
   }
 `;
 
@@ -152,10 +162,10 @@ const ShankyWork = () => {
           allowfullscreen
         ></YoutubeIframe>
 
-        <WorkImage src={Shanlybnpttleshpt} alt="Shankydrink" />
+        <WorkImage src={Shanlybnpttleshpt} alt="Shanky drink image one" />
 
         <WorkDescription>
-          <BackgroundShankyImg src={WhipHeadImg} alt="Shankydrink" />
+          <BackgroundShankyImg src={WhipHeadImg} alt="Shankydrink image two" />
           <WorkDescriptionCopy>
             <h2>SHANKY'S Tale</h2>
 
@@ -170,8 +180,8 @@ const ShankyWork = () => {
         </WorkDescription>
 
         <WorkSmallerImages>
-          <WorkSmallerImage src={Shankydrink} alt="Shankydrink" />
-          <WorkSmallerImage src={OstrichImage} alt="Shankydrink" />
+          <WorkSmallerImage src={Shankydrink} alt="Shanky drink image three" />
+          <WorkSmallerImage src={OstrichImage} alt="Shanky drink image four" />
         </WorkSmallerImages>
       </WorkWrapper>
     </ShankyWrapper>

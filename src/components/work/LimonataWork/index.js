@@ -8,6 +8,7 @@ const Wrapper = styled.div`
   background: url(${LimonataBg}), #333;
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 20px;
   padding-top: 40px;
   padding-bottom: 80px;
 
@@ -24,6 +25,10 @@ const WorkWrapper = styled.div`
   max-width: 1400px;
   margin: 0 auto;
   margin-top: 50px;
+
+  @media (max-width: 1000px) {
+    max-width: 700px;
+  }
 `;
 
 const WorkTitle = styled.div`
@@ -38,7 +43,7 @@ const YoutubeIframe = styled.iframe`
   height: 485px;
 
   @media (max-width: 600px) {
-    height: 250px;
+    height: 220px;
   }
 `;
 
