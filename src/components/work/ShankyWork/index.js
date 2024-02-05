@@ -53,7 +53,7 @@ const YoutubeIframe = styled.iframe`
   }
 
   @media (max-width: 500px) {
-    height: 220px;
+    height: 200px;
   }
 `;
 
