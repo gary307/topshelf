@@ -2,7 +2,7 @@ import * as React from "react";
 import { styled } from "styled-components";
 import CrossHair from "../../../images/crosshair.png";
 import Logo from "../../../images/logo.png";
-import HeroVideo from "../../../renders/top_shelf_hero_video.mp4";
+import HeroVideo from "../../../renders/top_shelf_hero_video_compressed.mp4";
 import Flowers from "../../../images/flowers.png";
 import { Gradiant } from "../../../shared/Gradiant";
 

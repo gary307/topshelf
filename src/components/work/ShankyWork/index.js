@@ -173,8 +173,9 @@ const ShankyWork = () => {
               Premium Irish whiskey liquor Shanky’s Whip wanted to amplify its
               authentic Irish roots. The brand was born from folk legend that
               spoke of a jockey and his ostrich, so we created a video campaign
-              gushing with Irish charm and quirky humor, celebrating everything
-              about the Emerald Isle of days gone by.
+              that brings these characters to life and gushes with Irish charm.
+              The campaign saw TV spots across major US platforms as well as
+              social channels across South Africa, US and UK.
             </p>
           </WorkDescriptionCopy>
         </WorkDescription>

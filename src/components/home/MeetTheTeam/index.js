@@ -109,6 +109,11 @@ const ProfilImageBorder = styled.div`
   z-index: 0;
   background: transparent;
   box-shadow: inset 0px 0 20px 2px #df9c5a, 0px 0 20px 2px #df9c5a;
+  animation-duration: 2.2s;
+  animation-name: glow;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: ${(props) => (props.reverse ? "0.5s" : "0s")};
 
   ${(props) =>
     props.reverse &&
@@ -122,9 +127,20 @@ const ProfilImageBorder = styled.div`
   @media (max-width: 700px) {
     height: 280px;
   }
-
-  @media (max-width: 500px) {
+  s @media (max-width: 500px) {
     height: 210px;
+  }
+
+  @keyframes glow {
+    from {
+      border: 2px solid #ebbf94;
+      box-shadow: inset 0px 0 30px 2px #ebbf94, 0px 0 30px 2px #ebbf94;
+    }
+
+    to {
+      border: 2px solid #df9c5a;
+      box-shadow: inset 0px 0 20px 2px #df9c5a, 0px 0 20px 2px #df9c5a;
+    }
   }
 `;
 

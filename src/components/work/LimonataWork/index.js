@@ -3,6 +3,7 @@ import { styled } from "styled-components";
 import LimonataLogo from "../../../images/cin_cin_limonata.png";
 import LimonataBg from "../../../images/Limonata_bg.jpg";
 import LimonataImg from "../../../images/limonata_image.jpg";
+import VirtualProductionStudio from "../../../renders/virtual_production_studio_1.mp4";
 
 const Wrapper = styled.div`
   background: url(${LimonataBg}), #333;
@@ -103,6 +104,10 @@ const WorkVideoAndDescription = styled.div`
   }
 `;
 
+const WorkRender = styled.video`
+  width: 100%;
+`;
+
 const LimonataWork = () => {
   return (
     <Wrapper>
@@ -125,8 +130,12 @@ const LimonataWork = () => {
             <WorkDescriptionCopy>
               <h2>Limonata's twist</h2>
               <p>
-                Lemon infused RTD vodka lemonade brand want to show their
-                product in its natural natural habitat in the Italian coastline.
+                Lemon infused RTD vodka Limonata Twist wanted to show their
+                product in its natural habitat of the Italian coastline. Using
+                our virtual production facility we created a realistic
+                environment. VP studios remove the need for green screen which
+                is great for filming liquids and glass providing practical
+                lighting, high-end lighting.
               </p>
             </WorkDescriptionCopy>
           </WorkDescription>
@@ -134,6 +143,15 @@ const LimonataWork = () => {
 
         <WorkImages>
           <WorkImage src={LimonataImg} alt="Shankydrink" />
+
+          <WorkRender
+            src={VirtualProductionStudio}
+            autoPlay
+            controls={false}
+            playsInline
+            muted
+            loop
+          />
         </WorkImages>
       </WorkWrapper>
     </Wrapper>

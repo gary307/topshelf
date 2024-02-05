@@ -2,6 +2,7 @@ import React from "react";
 import { styled } from "styled-components";
 import CrossHair from "../../../images/crosshair.png";
 import MessageBottleImage from "../../../images/message_in_a_bottle_two.png";
+import LinkedInIcon from "../../../images/circle-linkedin-512.png";
 
 const SaveFluffContainer = styled.div`
   display: flex;
@@ -48,7 +49,7 @@ const SaveFluffRow = styled.div`
 
 const SaveFluffColumn = styled.div`
   text-align: center;
-  width: 50%;
+  width: 100%;
 
   @media (max-width: 800px) {
     width: 80%;
@@ -75,6 +76,10 @@ const SaveFluffCopy = styled.p`
   }
 `;
 
+const LinkinImage = styled.img`
+  width: 80px;
+`;
+
 export const Contact = () => {
   return (
     <SaveFluffContainer id="contact">
@@ -88,11 +93,17 @@ export const Contact = () => {
           <SaveFluffTitle>Lets Chat...</SaveFluffTitle>
 
           <div>
-            <SaveFluffCopy>Email: Chris@topshelf.art</SaveFluffCopy>
+            <SaveFluffCopy>Email: info@topshelf.art</SaveFluffCopy>
             <SaveFluffCopy>No: 07793 057342</SaveFluffCopy>
+
+            <a
+              href="https://www.linkedin.com/company/top-shelf-productions/about/"
+              target="_blank"
+            >
+              <LinkinImage src={LinkedInIcon} />
+            </a>
           </div>
         </SaveFluffColumn>
-        <SaveFluffColumn></SaveFluffColumn>
       </SaveFluffRow>
     </SaveFluffContainer>
   );

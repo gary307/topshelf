@@ -2,7 +2,6 @@ import React from "react";
 import { styled } from "styled-components";
 import DesireFullFrameVideo from "../../../renders/desire_fulll_frame.mp4";
 import LuxuryBackground from "../../../images/luxury_geometric_shape.png";
-import ZeroThreePic from "../../../images/zero_three.png";
 
 const PremiumLuxuryContainer = styled.div`
   width: 100%;
@@ -37,7 +36,7 @@ const PremiumLuxuryColumn = styled.div`
 
   background: url(${LuxuryBackground}), #000;
   background-repeat: no-repeat;
-  background-position: 700px 50%;
+  background-position: 500px 50%;
   background-size: 1000px;
 
   @media (max-width: 1100px) {

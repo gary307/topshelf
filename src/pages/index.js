@@ -10,19 +10,22 @@ import { Contact } from "../components/home/Contact";
 import styled from "styled-components";
 import { Sustainability } from "../components/home/Sustainability";
 import { MeetTheTeam } from "../components/home/MeetTheTeam";
+import { Helmet } from "react-helmet";
 
 const Wrapper = styled.div``;
-
-const GradiantLeft = styled.div`
-  position: fixed;
-  width: 30px;
-  height: 100vh;
-  background: black;
-`;
 
 const IndexPage = () => {
   return (
     <Wrapper>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Top Shelf</title>
+        <link rel="canonical" href="http://www.topshelf.art" />
+        <meta
+          name="description"
+          content="A one-stop creative production shop. From primordial creative development through to all stages of production"
+        />
+      </Helmet>
       <GlobalTemplateStyle />
       <Header />
       <Hero />
