@@ -242,16 +242,6 @@ const CreativeTitle = styled.h2`
 `;
 
 export const CreativeExecution = () => {
-  const creativeVideo = React.useRef(null);
-  const executionVideo = React.useRef(null);
-
-  React.useEffect(() => {
-    // setTimeout(() => {
-    creativeVideo.current.play();
-    executionVideo.current.play();
-    // }, 2000);
-  }, []);
-
   return (
     <CreativeContentContainer>
       <CreativeDevColumn>
@@ -263,16 +253,14 @@ export const CreativeExecution = () => {
         </CreativeDevTitleContainer>
         <CreativeDevContent>
           <ArchWindowCOntainer>
-            {/* <ArchWindowImage src={ArchWindow} /> */}
+            <ArchWindowImage src={ArchWindow} />
             <CreativeVideo
-              ref={creativeVideo}
               src={CreativeFinal}
               loop
               controls={false}
-              // autoPlay={true}
-              // autoPlay
-              muted={true}
-              playsInline={true}
+              autoPlay
+              muted
+              playsInline
             />
           </ArchWindowCOntainer>
 
@@ -304,7 +292,6 @@ export const CreativeExecution = () => {
           </ExecutionDetails>
           <ExecutionVideoContainer>
             <ExecutionVideo
-              ref={executionVideo}
               src={ProductionVideo}
               loop
               controls={false}

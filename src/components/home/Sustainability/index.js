@@ -164,6 +164,7 @@ export const Sustainability = () => {
               controls={false}
               autoPlay
               muted
+              playsInline
             />
           </SutainVideoContainer>
         </SaveFluffColumn>

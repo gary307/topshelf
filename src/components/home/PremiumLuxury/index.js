@@ -134,6 +134,7 @@ export const PremiumLuxury = () => {
             controls={false}
             autoPlay
             muted
+            playsInline
           />
 
           <DesireContent>

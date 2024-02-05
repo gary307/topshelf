@@ -117,7 +117,7 @@ export const Hero = () => {
     <Wrapper>
       <Gradiant />
       <HeroVideoWrapper>
-        <video autoPlay loop muted playsinline src={HeroVideo}>
+        <video autoPlay loop muted playsInline src={HeroVideo}>
           <p>Description of the video...</p>
         </video>
       </HeroVideoWrapper>
