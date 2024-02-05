@@ -14,6 +14,7 @@ const Container = styled.div`
   align-items: center;
   background: #38454d;
   position: relative;
+  width: 100%;
   background-size: contain;
   backgrund-repeat: no-repeat;
   background-position: center;

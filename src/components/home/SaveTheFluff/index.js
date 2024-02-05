@@ -106,6 +106,7 @@ export const SaveTheFluff = () => {
               controls={false}
               autoPlay
               muted
+              playsInline
             />
           </SaveFluffColumn>
           <SaveFluffColumn>

@@ -14,6 +14,7 @@ const SaveFluffContainer = styled.div`
   align-items: center;
   position: relative;
   background: #df9c5a;
+  width: 100%;
 
   @media (max-width: 1000px) {
     padding: 100px 20px 100px 20px;
