@@ -240,7 +240,10 @@ export const MeetTheTeam = () => {
             <Column>
               <ProfileImageContainer>
                 <ProfilImageBorder />
-                <ProfileImage src={ChrisProfilePic} />
+                <ProfileImage
+                  src={ChrisProfilePic}
+                  alt="Chris profile picture"
+                />
               </ProfileImageContainer>
             </Column>
           </Row>
@@ -271,7 +274,11 @@ export const MeetTheTeam = () => {
             <Column>
               <ProfileImageContainer>
                 <ProfilImageBorder reverse />
-                <ProfileImage reverse src={GeraldineProfile} />
+                <ProfileImage
+                  reverse
+                  src={GeraldineProfile}
+                  alt="Geraldine profile picture"
+                />
               </ProfileImageContainer>
             </Column>
           </Row>

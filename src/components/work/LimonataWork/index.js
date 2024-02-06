@@ -112,7 +112,7 @@ const LimonataWork = () => {
   return (
     <Wrapper>
       <WorkTitle>
-        <LogoImg src={LimonataLogo} alt="ShankyLogo" />
+        <LogoImg src={LimonataLogo} alt="Limonata Logo" />
       </WorkTitle>
       <WorkWrapper>
         <WorkVideoAndDescription>
@@ -142,7 +142,7 @@ const LimonataWork = () => {
         </WorkVideoAndDescription>
 
         <WorkImages>
-          <WorkImage src={LimonataImg} alt="Shankydrink" />
+          <WorkImage src={LimonataImg} alt="Limonata Work image" />
 
           <WorkRender
             src={VirtualProductionStudio}

@@ -127,7 +127,7 @@ export const Hero = () => {
         <CrossHairImage bottom={"20px"} left={"20px"} src={CrossHair} />
         <CrossHairImage bottom={"20px"} right={"20px"} src={CrossHair} />
         <LogoContainer>
-          <img src={Logo} />
+          <img src={Logo} alt="Top Shelf beverage brand content production" />
         </LogoContainer>
         <HeroColumn>
           <HeroTitle>TOP SHELF IS...</HeroTitle>

@@ -109,7 +109,7 @@ const MalfyWork = () => {
   return (
     <HaigWrapper>
       <WorkTitle>
-        <MalfyLogoImg src={MalfyLogo} alt="ShankyLogo" />
+        <MalfyLogoImg src={MalfyLogo} alt="Malfy Logo" />
       </WorkTitle>
       <WorkWrapper>
         <WorkVideoAndDescription>
@@ -137,8 +137,8 @@ const MalfyWork = () => {
         </WorkVideoAndDescription>
 
         <WorkImages>
-          <WorkImage src={MalfyPicOne} alt="Shankydrink" />
-          <WorkImage src={MalfyPicTwo} alt="Shankydrink" />
+          <WorkImage src={MalfyPicOne} alt="Malfy gin image one" />
+          <WorkImage src={MalfyPicTwo} alt="Malfy gin image two" />
         </WorkImages>
       </WorkWrapper>
     </HaigWrapper>

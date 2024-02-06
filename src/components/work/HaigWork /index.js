@@ -112,7 +112,7 @@ const ShankyWork = () => {
   return (
     <HaigWrapper>
       <WorkTitle>
-        <HaigLogoImg src={HaigLogo} alt="ShankyLogo" />
+        <HaigLogoImg src={HaigLogo} alt="Haig Logo" />
       </WorkTitle>
       <WorkWrapper>
         <YoutubeIframe
@@ -125,7 +125,10 @@ const ShankyWork = () => {
           allowfullscreen
         ></YoutubeIframe>
 
-        <WorkImage src={MakeYOurOwnRuleGif} alt="Shankydrink" />
+        <WorkImage
+          src={MakeYOurOwnRuleGif}
+          alt="Haig, make your own rules work image"
+        />
 
         <WorkDescription>
           <HaigLogoEmbossed

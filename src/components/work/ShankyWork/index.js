@@ -128,7 +128,7 @@ const ShankyWork = () => {
   return (
     <ShankyWrapper>
       <WorkTitle>
-        <ShankyLogoImg src={ShankyLogo} alt="ShankyLogo" />
+        <ShankyLogoImg src={ShankyLogo} alt="Shanky's Logo" />
       </WorkTitle>
       <WorkWrapper>
         <YoutubeIframe
@@ -162,10 +162,13 @@ const ShankyWork = () => {
           allowfullscreen
         ></YoutubeIframe>
 
-        <WorkImage src={Shanlybnpttleshpt} alt="Shanky drink image one" />
+        <WorkImage src={Shanlybnpttleshpt} alt="Shanky's Whip image one" />
 
         <WorkDescription>
-          <BackgroundShankyImg src={WhipHeadImg} alt="Shankydrink image two" />
+          <BackgroundShankyImg
+            src={WhipHeadImg}
+            alt="Shanky's Whip image two"
+          />
           <WorkDescriptionCopy>
             <h2>SHANKY'S Tale</h2>
 
@@ -181,8 +184,8 @@ const ShankyWork = () => {
         </WorkDescription>
 
         <WorkSmallerImages>
-          <WorkSmallerImage src={Shankydrink} alt="Shanky drink image three" />
-          <WorkSmallerImage src={OstrichImage} alt="Shanky drink image four" />
+          <WorkSmallerImage src={Shankydrink} alt="Shanky's Whip image three" />
+          <WorkSmallerImage src={OstrichImage} alt="Shanky's Whip image four" />
         </WorkSmallerImages>
       </WorkWrapper>
     </ShankyWrapper>
