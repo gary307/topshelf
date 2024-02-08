@@ -114,8 +114,8 @@ export const SaveTheFluff = () => {
 
             <div>
               <SaveFluffCopy>
-                We’re not about disposable social fodder, fluffy margetting
-                lingo or meaningless analytics. We use a healthy balance of data
+                We’re not about disposable social fodder, fluffy marketing lingo
+                or meaningless analytics. We use a healthy balance of data
                 informed creative strategy and talented human minds to deliver
                 clear and effective branded content that truly connects with its
                 audience.
