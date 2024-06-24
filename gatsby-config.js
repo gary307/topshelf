@@ -8,6 +8,7 @@ module.exports = {
     description: `A one-stop creative production shop. From primordial creative development through to all stages of production`,
   },
   plugins: [
+    "gatsby-plugin-offline",
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
