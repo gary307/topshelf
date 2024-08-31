@@ -4,6 +4,7 @@ import HaigWork from "../components/work/HaigWork ";
 import MalfyWork from "../components/work/MalfyWork";
 import Header from "../components/Header";
 import LimonataWork from "../components/work/LimonataWork";
+import ButterflyCannonWork from '../components/work/ButterflyCannonWork';
 import { GlobalTemplateStyle } from "../shared/globalTemplateStyle";
 import { Contact } from "../components/home/Contact";
 import { Helmet } from "react-helmet";
@@ -26,6 +27,7 @@ const IndexPage = () => {
       <HaigWork />
       <MalfyWork />
       <LimonataWork />
+      <ButterflyCannonWork />
       <Contact />
     </>
   );
