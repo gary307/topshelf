@@ -5,7 +5,9 @@ import Shanlybnpttleshpt from "../../../images/shanlybnpttleshpt.jpg";
 import ShankyLogo from "../../../images/shankys-whip-logo.png";
 import OstrichEmblems from "../../../images/ostrich-emblems.png";
 import WhipHeadImg from "../../../images/whip_head.png";
-import OstrichImage from "../../../images/ostrich.png";
+// import OstrichImage from "../../../images/ostrich.png";
+import PromoImage from "../../../images/shanky_promo.jpg";
+// import SHankyNewGif from "../../../images/shanky_new.gif";
 
 const ShankyWrapper = styled.div`
   background: url(${OstrichEmblems}), #232b30;
@@ -59,11 +61,13 @@ const YoutubeIframe = styled.iframe`
 
 const WorkImage = styled.img`
   grid-column: span 4;
+  grid-row: span 2;
   width: 100%;
   object-fit: cover;
-  height: 312px;
+  // height: 312px;
   @media (max-width: 1000px) {
     grid-column: span 8;
+      grid-row: span 1;
   }
 
   @media (max-width: 500px) {
@@ -115,6 +119,14 @@ const WorkSmallerImage = styled.img`
   margin-bottom: 20px;
 `;
 
+const WorkMediumImage = styled.img`
+  grid-column: span 4;
+  width: 100%;
+  object-fit: cover;
+  // height: 400px;
+  margin-bottom: 20px;
+`;
+
 const ShankyLogoImg = styled.img`
   width: 200px;
 `;
@@ -162,7 +174,8 @@ const ShankyWork = () => {
           allowfullscreen
         ></YoutubeIframe>
 
-        <WorkImage src={Shanlybnpttleshpt} alt="Shanky's Whip image one" />
+        <WorkImage src={PromoImage} alt="Shanky's Whip image one" />
+
 
         <WorkDescription>
           <BackgroundShankyImg
@@ -183,10 +196,10 @@ const ShankyWork = () => {
           </WorkDescriptionCopy>
         </WorkDescription>
 
-        <WorkSmallerImages>
-          <WorkSmallerImage src={Shankydrink} alt="Shanky's Whip image three" />
-          <WorkSmallerImage src={OstrichImage} alt="Shanky's Whip image four" />
-        </WorkSmallerImages>
+        {/* <WorkSmallerImages>
+          <WorkMediumImage src={PromoImage} alt="Shanky's Whip image four" />
+          <WorkMediumImage src={SHankyNewGif} alt="Shanky's Whip image four" />
+        </WorkSmallerImages> */}
       </WorkWrapper>
     </ShankyWrapper>
   );
