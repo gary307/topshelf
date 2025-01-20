@@ -4,6 +4,7 @@ import HaigWork from "../components/work/HaigWork ";
 import MalfyWork from "../components/work/MalfyWork";
 import Header from "../components/Header";
 import LimonataWork from "../components/work/LimonataWork";
+import PodAndBriar from "../components/work/PodAndBriar";
 import ButterflyCannonWork from '../components/work/ButterflyCannonWork';
 import { GlobalTemplateStyle } from "../shared/globalTemplateStyle";
 import { Contact } from "../components/home/Contact";
@@ -28,6 +29,7 @@ const IndexPage = () => {
       <MalfyWork />
       <LimonataWork />
       <ButterflyCannonWork />
+      <PodAndBriar />
       <Contact />
     </>
   );
