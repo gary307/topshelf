@@ -27,9 +27,9 @@ const IndexPage = () => {
       <ShankyWork />
       <HaigWork />
       <MalfyWork />
+      <PodAndBriar />
       <LimonataWork />
       <ButterflyCannonWork />
-      <PodAndBriar />
       <Contact />
     </>
   );

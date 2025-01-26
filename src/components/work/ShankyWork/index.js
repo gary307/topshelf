@@ -61,13 +61,11 @@ const YoutubeIframe = styled.iframe`
 
 const WorkImage = styled.img`
   grid-column: span 4;
-  grid-row: span 2;
   width: 100%;
   object-fit: cover;
-  // height: 312px;
+  height: 312px;
   @media (max-width: 1000px) {
     grid-column: span 8;
-      grid-row: span 1;
   }
 
   @media (max-width: 500px) {
@@ -174,7 +172,9 @@ const ShankyWork = () => {
           allowfullscreen
         ></YoutubeIframe>
 
-        <WorkImage src={PromoImage} alt="Shanky's Whip image one" />
+<WorkImage src={Shanlybnpttleshpt} />
+
+        {/* <WorkImage src={PromoImage} alt="Shanky's Whip image one" /> */}
 
 
         <WorkDescription>
@@ -196,10 +196,11 @@ const ShankyWork = () => {
           </WorkDescriptionCopy>
         </WorkDescription>
 
-        {/* <WorkSmallerImages>
-          <WorkMediumImage src={PromoImage} alt="Shanky's Whip image four" />
-          <WorkMediumImage src={SHankyNewGif} alt="Shanky's Whip image four" />
-        </WorkSmallerImages> */}
+        <WorkSmallerImages>
+          <WorkMediumImage src={PromoImage} alt="Shanky's Whip image one" />
+          {/* <WorkMediumImage src={PromoImage} alt="Shanky's Whip image four" />
+          <WorkMediumImage src={SHankyNewGif} alt="Shanky's Whip image four" /> */}
+        </WorkSmallerImages> 
       </WorkWrapper>
     </ShankyWrapper>
   );

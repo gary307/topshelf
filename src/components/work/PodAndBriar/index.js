@@ -41,7 +41,7 @@ const WorkTitle = styled.div`
 const YoutubeIframe = styled.iframe`
   grid-column: span 5;
   width: 100%;
-  height: 485px;
+  height: 385px;
 
   @media (max-width: 600px) {
     height: 220px;
@@ -49,10 +49,10 @@ const YoutubeIframe = styled.iframe`
 `;
 
 const WorkImage = styled.img`
-  grid-column: span 3;
+  // grid-column: span 4;
   width: 100%;
+  width: 50%;
   object-fit: cover;
-  height: 484px;
   margin-bottom: 20px;
 `;
 
@@ -89,7 +89,11 @@ const LogoImg = styled.img`
 `;
 
 const WorkImages = styled.div`
-  grid-column: 6 / span 3;
+  grid-column: 5 / span 5;
+
+  display: flex;
+
+  gap: 20px;
 
   @media (max-width: 1000px) {
     grid-column: span 8;
@@ -97,15 +101,11 @@ const WorkImages = styled.div`
 `;
 
 const WorkVideoAndDescription = styled.div`
-  grid-column: span 5;
+  grid-column: span 4;
 
   @media (max-width: 1000px) {
     grid-column: span 8;
   }
-`;
-
-const WorkRender = styled.video`
-  width: 100%;
 `;
 
 const PodAndBriar = () => {
@@ -137,8 +137,8 @@ const PodAndBriar = () => {
         </WorkVideoAndDescription>
 
         <WorkImages>
-          <WorkImage src={PAndBImgOne} alt="Limonata Work image" />
-          <WorkImage src={PAndBImgTwo} alt="Limonata Work image" />
+          <WorkImage src={PAndBImgOne} alt="Pod and Briar Work image" />
+          <WorkImage src={PAndBImgTwo} alt="Pod and Briar Work image" />
         </WorkImages>
       </WorkWrapper>
     </Wrapper>
