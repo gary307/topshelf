@@ -144,10 +144,11 @@ const ShankyWork = () => {
 				<YoutubeIframe
 					width="560"
 					height="315"
-					src="https://www.youtube.com/embed/rSjDTVwskT0?si=Yt8Utcer2G1k6eQO"
+					src="https://www.youtube-nocookie.com/embed/rSjDTVwskT0?si=8pgLKKp02pKSpSIm"
 					title="YouTube video player"
 					frameborder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					referrerpolicy="strict-origin-when-cross-origin"
 					allowfullscreen
 				></YoutubeIframe>
 
@@ -158,6 +159,7 @@ const ShankyWork = () => {
 					title="YouTube video player"
 					frameborder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					referrerpolicy="strict-origin-when-cross-origin"
 					allowfullscreen
 				></YoutubeIframe>
 
@@ -169,6 +171,7 @@ const ShankyWork = () => {
 					title="YouTube video player"
 					frameborder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					referrerpolicy="strict-origin-when-cross-origin"
 					allowfullscreen
 				></YoutubeIframe>
 
