@@ -135,75 +135,74 @@ const BackgroundShankyImg = styled.img`
 `;
 
 const ShankyWork = () => {
-  return (
-    <ShankyWrapper>
-      <WorkTitle>
-        <ShankyLogoImg src={ShankyLogo} alt="Shanky's Logo" />
-      </WorkTitle>
-      <WorkWrapper>
-        <YoutubeIframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/rSjDTVwskT0?si=qx315-AI3SG3QZEy"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></YoutubeIframe>
+	return (
+		<ShankyWrapper>
+			<WorkTitle>
+				<ShankyLogoImg src={ShankyLogo} alt="Shanky's Logo" />
+			</WorkTitle>
+			<WorkWrapper>
+				<YoutubeIframe
+					width="560"
+					height="315"
+					src="https://www.youtube.com/embed/rSjDTVwskT0?si=Yt8Utcer2G1k6eQO"
+					title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen
+				></YoutubeIframe>
 
-        <YoutubeIframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/xrqFYuhsrSY?si=l3e1GYFlv75fEGjq"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></YoutubeIframe>
+				<YoutubeIframe
+					width="560"
+					height="315"
+					src="https://www.youtube.com/embed/xrqFYuhsrSY?si=abtyk7Mtt36fhOxt"
+					title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen
+				></YoutubeIframe>
 
-        <YoutubeIframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/Cii6HM2IRV0?si=CNlPrs-Rp-H8BPxM
+				<YoutubeIframe
+					width="560"
+					height="315"
+					src="https://www.youtube.com/embed/Cii6HM2IRV0?si=CuC4y_vyaasG3RPi
           "
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></YoutubeIframe>
+					title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen
+				></YoutubeIframe>
 
-<WorkImage src={Shanlybnpttleshpt} />
+				<WorkImage src={Shanlybnpttleshpt} />
 
-        {/* <WorkImage src={PromoImage} alt="Shanky's Whip image one" /> */}
+				{/* <WorkImage src={PromoImage} alt="Shanky's Whip image one" /> */}
 
+				<WorkDescription>
+					<BackgroundShankyImg
+						src={WhipHeadImg}
+						alt="Shanky's Whip image two"
+					/>
+					<WorkDescriptionCopy>
+						<h2>SHANKY'S Tale</h2>
 
-        <WorkDescription>
-          <BackgroundShankyImg
-            src={WhipHeadImg}
-            alt="Shanky's Whip image two"
-          />
-          <WorkDescriptionCopy>
-            <h2>SHANKY'S Tale</h2>
+						<p>
+							Premium Irish whiskey liquor Shanky’s Whip wanted to amplify its
+							authentic Irish roots. The brand was born from folk legend that
+							spoke of a jockey and his ostrich, so we created a video campaign
+							that brings these characters to life and gushes with Irish charm.
+							The campaign saw TV spots across major US platforms as well as
+							social channels across South Africa, US and UK.
+						</p>
+					</WorkDescriptionCopy>
+				</WorkDescription>
 
-            <p>
-              Premium Irish whiskey liquor Shanky’s Whip wanted to amplify its
-              authentic Irish roots. The brand was born from folk legend that
-              spoke of a jockey and his ostrich, so we created a video campaign
-              that brings these characters to life and gushes with Irish charm.
-              The campaign saw TV spots across major US platforms as well as
-              social channels across South Africa, US and UK.
-            </p>
-          </WorkDescriptionCopy>
-        </WorkDescription>
-
-        <WorkSmallerImages>
-          <WorkMediumImage src={PromoImage} alt="Shanky's Whip image one" />
-          {/* <WorkMediumImage src={PromoImage} alt="Shanky's Whip image four" />
+				<WorkSmallerImages>
+					<WorkMediumImage src={PromoImage} alt="Shanky's Whip image one" />
+					{/* <WorkMediumImage src={PromoImage} alt="Shanky's Whip image four" />
           <WorkMediumImage src={SHankyNewGif} alt="Shanky's Whip image four" /> */}
-        </WorkSmallerImages> 
-      </WorkWrapper>
-    </ShankyWrapper>
-  );
+				</WorkSmallerImages>
+			</WorkWrapper>
+		</ShankyWrapper>
+	);
 };
 
 export default ShankyWork;
