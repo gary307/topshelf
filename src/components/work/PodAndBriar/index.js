@@ -109,40 +109,45 @@ const WorkVideoAndDescription = styled.div`
 `;
 
 const PodAndBriar = () => {
-  return (
-    <Wrapper>
-      <WorkTitle>
-        <LogoImg src={pbLogo} alt="Limonata Logo" />
-      </WorkTitle>
-      <WorkWrapper>
-        <WorkVideoAndDescription>
-          <YoutubeIframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/F8Nq4Aio9eY?si=PNLw3O1eqY7Idty7"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></YoutubeIframe>
+	return (
+		<Wrapper>
+			<WorkTitle>
+				<LogoImg src={pbLogo} alt="Limonata Logo" />
+			</WorkTitle>
+			<WorkWrapper>
+				<WorkVideoAndDescription>
+					<YoutubeIframe
+						width="560"
+						height="315"
+						src="https://www.youtube.com/embed/F8Nq4Aio9eY?si=PNLw3O1eqY7Idty7"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerpolicy="strict-origin-when-cross-origin"
+						allowfullscreen
+					></YoutubeIframe>
 
-          <WorkDescription>
-            <WorkDescriptionCopy>
-              <h2>Pod & Briar</h2>
-              <p>
-              Vegan chocolatiers Pod&Briar wanted to reach their audience and educate them on the incredible love, craft and ingredients that go into each and everyone of their unique chocolates. We produced a fun, upbeat video campaign to spread the word across social platforms.
-              </p>
-            </WorkDescriptionCopy>
-          </WorkDescription>
-        </WorkVideoAndDescription>
+					<WorkDescription>
+						<WorkDescriptionCopy>
+							<h2>Pod & Briar</h2>
+							<p>
+								Vegan chocolatiers Pod&Briar wanted to reach their audience and
+								educate them on the incredible love, craft and ingredients that
+								go into each and everyone of their unique chocolates. We
+								produced a fun, upbeat video campaign to spread the word across
+								social platforms.
+							</p>
+						</WorkDescriptionCopy>
+					</WorkDescription>
+				</WorkVideoAndDescription>
 
-        <WorkImages>
-          <WorkImage src={PAndBImgOne} alt="Pod and Briar Work image" />
-          <WorkImage src={PAndBImgTwo} alt="Pod and Briar Work image" />
-        </WorkImages>
-      </WorkWrapper>
-    </Wrapper>
-  );
+				<WorkImages>
+					<WorkImage src={PAndBImgOne} alt="Pod and Briar Work image" />
+					<WorkImage src={PAndBImgTwo} alt="Pod and Briar Work image" />
+				</WorkImages>
+			</WorkWrapper>
+		</Wrapper>
+	);
 };
 
 export default PodAndBriar;

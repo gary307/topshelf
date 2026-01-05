@@ -109,44 +109,45 @@ const HaigLogoEmbossed = styled.img`
 `;
 
 const ShankyWork = () => {
-  return (
-    <HaigWrapper>
-      <WorkTitle>
-        <HaigLogoImg src={HaigLogo} alt="Haig Logo" />
-      </WorkTitle>
-      <WorkWrapper>
-        <YoutubeIframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/mKGJG_vJbyw?si=7Ej7AxgHMDqXmC5D"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></YoutubeIframe>
+	return (
+		<HaigWrapper>
+			<WorkTitle>
+				<HaigLogoImg src={HaigLogo} alt="Haig Logo" />
+			</WorkTitle>
+			<WorkWrapper>
+				<YoutubeIframe
+					width="560"
+					height="315"
+					src="https://www.youtube.com/embed/mKGJG_vJbyw?si=7Ej7AxgHMDqXmC5D"
+					title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					referrerpolicy="strict-origin-when-cross-origin"
+					allowfullscreen
+				></YoutubeIframe>
 
-        <WorkImage
-          src={MakeYOurOwnRuleGif}
-          alt="Haig, make your own rules work image"
-        />
+				<WorkImage
+					src={MakeYOurOwnRuleGif}
+					alt="Haig, make your own rules work image"
+				/>
 
-        <WorkDescription>
-          <HaigLogoEmbossed
-            src={haigLogoEmbossedImage}
-            alt="HaigLogoEmbossed"
-          />
-          <WorkDescriptionCopy>
-            <h2>HAIG'S STORY </h2>
-            <p>
-              Haig whiskey wanted to launch their new bottle design and spread
-              the Make Your Own Rules message. Showing the product at home in a
-              series of 'current' social environments.
-            </p>
-          </WorkDescriptionCopy>
-        </WorkDescription>
-      </WorkWrapper>
-    </HaigWrapper>
-  );
+				<WorkDescription>
+					<HaigLogoEmbossed
+						src={haigLogoEmbossedImage}
+						alt="HaigLogoEmbossed"
+					/>
+					<WorkDescriptionCopy>
+						<h2>HAIG'S STORY </h2>
+						<p>
+							Haig whiskey wanted to launch their new bottle design and spread
+							the Make Your Own Rules message. Showing the product at home in a
+							series of 'current' social environments.
+						</p>
+					</WorkDescriptionCopy>
+				</WorkDescription>
+			</WorkWrapper>
+		</HaigWrapper>
+	);
 };
 
 export default ShankyWork;

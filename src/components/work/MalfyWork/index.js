@@ -106,43 +106,44 @@ const WorkVideoAndDescription = styled.div`
 `;
 
 const MalfyWork = () => {
-  return (
-    <HaigWrapper>
-      <WorkTitle>
-        <MalfyLogoImg src={MalfyLogo} alt="Malfy Logo" />
-      </WorkTitle>
-      <WorkWrapper>
-        <WorkVideoAndDescription>
-          <YoutubeIframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/984DCHNX94s?si=B_iVyMmugF38zwZO?color=white"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></YoutubeIframe>
+	return (
+		<HaigWrapper>
+			<WorkTitle>
+				<MalfyLogoImg src={MalfyLogo} alt="Malfy Logo" />
+			</WorkTitle>
+			<WorkWrapper>
+				<WorkVideoAndDescription>
+					<YoutubeIframe
+						width="560"
+						height="315"
+						src="https://www.youtube.com/embed/984DCHNX94s?si=B_iVyMmugF38zwZO?color=white"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerpolicy="strict-origin-when-cross-origin"
+						allowfullscreen
+					></YoutubeIframe>
 
-          <WorkDescription>
-            <WorkDescriptionCopy>
-              <h2>Malfy's Story</h2>
-              <p>
-                New Italian challenger brand, Malfy wanted a visually iconic TV
-                commercial that celebrates everything about life on the
-                beautiful Amalfi coast. We also created a suite of short videos
-                and stills that performed well on social.
-              </p>
-            </WorkDescriptionCopy>
-          </WorkDescription>
-        </WorkVideoAndDescription>
+					<WorkDescription>
+						<WorkDescriptionCopy>
+							<h2>Malfy's Story</h2>
+							<p>
+								New Italian challenger brand, Malfy wanted a visually iconic TV
+								commercial that celebrates everything about life on the
+								beautiful Amalfi coast. We also created a suite of short videos
+								and stills that performed well on social.
+							</p>
+						</WorkDescriptionCopy>
+					</WorkDescription>
+				</WorkVideoAndDescription>
 
-        <WorkImages>
-          <WorkImage src={MalfyPicOne} alt="Malfy gin image one" />
-          <WorkImage src={MalfyPicTwo} alt="Malfy gin image two" />
-        </WorkImages>
-      </WorkWrapper>
-    </HaigWrapper>
-  );
+				<WorkImages>
+					<WorkImage src={MalfyPicOne} alt="Malfy gin image one" />
+					<WorkImage src={MalfyPicTwo} alt="Malfy gin image two" />
+				</WorkImages>
+			</WorkWrapper>
+		</HaigWrapper>
+	);
 };
 
 export default MalfyWork;

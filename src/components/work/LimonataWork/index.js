@@ -109,53 +109,54 @@ const WorkRender = styled.video`
 `;
 
 const LimonataWork = () => {
-  return (
-    <Wrapper>
-      <WorkTitle>
-        <LogoImg src={LimonataLogo} alt="Limonata Logo" />
-      </WorkTitle>
-      <WorkWrapper>
-        <WorkVideoAndDescription>
-          <YoutubeIframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/4eowDv_vNU0?si=vAf8zzG7K0eLKfaZ"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></YoutubeIframe>
+	return (
+		<Wrapper>
+			<WorkTitle>
+				<LogoImg src={LimonataLogo} alt="Limonata Logo" />
+			</WorkTitle>
+			<WorkWrapper>
+				<WorkVideoAndDescription>
+					<YoutubeIframe
+						width="560"
+						height="315"
+						src="https://www.youtube.com/embed/4eowDv_vNU0?si=vAf8zzG7K0eLKfaZ"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerpolicy="strict-origin-when-cross-origin"
+						allowfullscreen
+					></YoutubeIframe>
 
-          <WorkDescription>
-            <WorkDescriptionCopy>
-              <h2>Limonata's twist</h2>
-              <p>
-                Lemon infused RTD vodka Limonata Twist wanted to show their
-                product in its natural habitat of the Italian coastline. Using
-                our virtual production facility we created a realistic
-                environment. VP studios remove the need for green screen which
-                is great for filming liquids and glass providing practical
-                lighting, high-end lighting.
-              </p>
-            </WorkDescriptionCopy>
-          </WorkDescription>
-        </WorkVideoAndDescription>
+					<WorkDescription>
+						<WorkDescriptionCopy>
+							<h2>Limonata's twist</h2>
+							<p>
+								Lemon infused RTD vodka Limonata Twist wanted to show their
+								product in its natural habitat of the Italian coastline. Using
+								our virtual production facility we created a realistic
+								environment. VP studios remove the need for green screen which
+								is great for filming liquids and glass providing practical
+								lighting, high-end lighting.
+							</p>
+						</WorkDescriptionCopy>
+					</WorkDescription>
+				</WorkVideoAndDescription>
 
-        <WorkImages>
-          <WorkImage src={LimonataImg} alt="Limonata Work image" />
+				<WorkImages>
+					<WorkImage src={LimonataImg} alt="Limonata Work image" />
 
-          <WorkRender
-            src={VirtualProductionStudio}
-            autoPlay
-            controls={false}
-            playsInline
-            muted
-            loop
-          />
-        </WorkImages>
-      </WorkWrapper>
-    </Wrapper>
-  );
+					<WorkRender
+						src={VirtualProductionStudio}
+						autoPlay
+						controls={false}
+						playsInline
+						muted
+						loop
+					/>
+				</WorkImages>
+			</WorkWrapper>
+		</Wrapper>
+	);
 };
 
 export default LimonataWork;
